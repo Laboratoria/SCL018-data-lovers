@@ -1,10 +1,10 @@
-exportar  predeterminado  {
+export default  {
   "estudio" : "Studio Ghibli Inc." ,
   "películas" : [
     {
       "id" : "2baf70d1-42bb-4437-b551-e5fed5a87abe" ,
       "title" : "Castillo en el cielo" ,
-      "description" : "La huérfana Sheeta heredó un cristal misterioso que la vincula con el mítico reino celestial de Laputa. Con la ayuda de la ingeniosa Pazu y una alegre banda de piratas celestiales, se abre camino hacia las ruinas de la otrora grandiosa civilización. Sheeta y Pazu deben burlar al malvado Muska, que planea usar la ciencia de Laputa para convertirse en gobernante del mundo ". ,
+      "description" : "La huérfana Sheeta heredó un cristal misterioso que la vincula con el mítico reino celestial de Laputa. Con la ayuda de la ingeniosa Pazu y una alegre banda de piratas celestiales, se abre camino hacia las ruinas de la otrora grandiosa civilización. Sheeta y Pazu deben burlar al malvado Muska, que planea usar la ciencia de Laputa para convertirse en gobernante del mundo. " ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Isao Takahata" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg" ,
@@ -206,7 +206,7 @@ exportar  predeterminado  {
     {
       "id" : "58611129-2dbc-4a81-a72f-77ddfc1b1b49" ,
       "title" : "Mi vecino Totoro" ,
-      "description" : "Dos hermanas se trasladan al campo con su padre para estar más cerca de su madre hospitalizada y descubrir que los árboles circundantes están habitados por Totoros, espíritus mágicos del bosque. Cuando la menor se escapa de casa, la mayor la hermana busca la ayuda de los espíritus para encontrarla ". ,
+      "description" : "Dos hermanas se trasladan al campo con su padre para estar más cerca de su madre hospitalizada y descubrir que los árboles circundantes están habitados por Totoros, espíritus mágicos del bosque. Cuando la menor se escapa de casa, la mayor la hermana busca la ayuda de los espíritus para encontrarla. " ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Hayao Miyazaki" ,
       "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg" ,
@@ -354,7 +354,7 @@ exportar  predeterminado  {
     {
       "id" : "ea660b10-85c4-4ae3-8a5f-41cea3648e3e" ,
       "title" : "Servicio de entrega de Kiki" ,
-      "description" : "Una joven bruja, en su año obligatorio de vida independiente, encuentra difícil adaptarse a una nueva comunidad mientras se mantiene a sí misma con un servicio de mensajería aérea". ,
+      "description" : "Una joven bruja, en su año obligatorio de vida independiente, encuentra difícil adaptarse a una nueva comunidad mientras se mantiene a sí misma con un servicio de mensajería aérea. " ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Hayao Miyazaki" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg" ,
@@ -480,7 +480,7 @@ exportar  predeterminado  {
     {
       "id" : "12cfb892-aac0-4c5b-94af-521852e46d6a" ,
       "title" : "Tumba de las luciérnagas" ,
-      "description" : "En la última parte de la Segunda Guerra Mundial, un niño y su hermana, que quedaron huérfanos cuando su madre muere en el bombardeo incendiario de Tokio, quedan para sobrevivir solos en lo que queda de la vida civil en Japón. El complot sigue a este niño y su hermana mientras hacen todo lo posible por sobrevivir en el campo japonés, luchando contra el hambre, los prejuicios y el orgullo en su propia batalla personal y tranquila ". ,
+      "description" : "En la última parte de la Segunda Guerra Mundial, un niño y su hermana, que quedaron huérfanos cuando su madre muere en el bombardeo incendiario de Tokio, quedan para sobrevivir solos en lo que queda de la vida civil en Japón. El complot sigue a este niño y su hermana mientras hacen todo lo posible por sobrevivir en el campo japonés, luchando contra el hambre, los prejuicios y el orgullo en su propia batalla personal y tranquila. " ,
       "director" : "Isao Takahata" ,
       "productor" : "Toru Hara" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg" ,
@@ -544,7 +544,7 @@ exportar  predeterminado  {
     {
       "id" : "4e236f34-b981-41c3-8c65-f8c9000b94e7" ,
       "title" : "Solo ayer" ,
-      "description" : "Es 1982, y Taeko tiene 27 años, es soltera y ha vivido toda su vida en Tokio. Decide visitar a su familia en el campo y, mientras el tren viaja por la noche, los recuerdos la invaden. Años más jóvenes: los primeros momentos inmaduros de romance, el inicio de la pubertad y las frustraciones de las matemáticas y los niños. En la estación se encuentra con el joven agricultor Toshio, y los encuentros con él comienzan a reconectarla con anhelos olvidados. entre el presente y el pasado, Taeko contempla el arco de su vida y se pregunta si ha sido fiel a los sueños de su infancia ". ,
+      "description" : "Es 1982, y Taeko tiene 27 años, es soltera y ha vivido toda su vida en Tokio. Decide visitar a su familia en el campo y, mientras el tren viaja por la noche, los recuerdos la invaden. Años más jóvenes: los primeros momentos inmaduros de romance, el inicio de la pubertad y las frustraciones de las matemáticas y los niños. En la estación se encuentra con el joven agricultor Toshio, y los encuentros con él comienzan a reconectarla con anhelos olvidados. entre el presente y el pasado, Taeko contempla el arco de su vida y se pregunta si ha sido fiel a los sueños de su infancia. " ,
       "director" : "Isao Takahata" ,
       "productor" : "Toshio Suzuki" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg" ,
@@ -885,7 +885,7 @@ exportar  predeterminado  {
     {
       "id" : "ff24da26-a969-4f0e-ba1e-a122ead6c6e3" ,
       "title" : "Susurro del corazón" ,
-      "description" : "Shizuku vive una vida sencilla, dominada por su amor por las historias y la escritura. Un día se da cuenta de que todos los libros de la biblioteca que tiene han sido prestados previamente por la misma persona: 'Seiji Amasawa'. Curioso por saber quién él es, Shizuku conoce a un chico de su edad al que encuentra exasperante, pero descubre para su sorpresa que él es su 'Príncipe de los Libros'. A medida que se acerca a él, se da cuenta de que él simplemente leyó todos esos libros para acercarse a él. El niño Seiji aspira a ser un fabricante de violines en Italia, y son sus sueños los que hacen que Shizuku se dé cuenta de que no tiene un camino claro para su vida. Sabiendo que su fuerza radica en escribir, pone a prueba su talento escribiendo una historia sobre Baron, una estatuilla de gato que pertenece al abuelo de Seiji ". ,
+      "description" : "Shizuku vive una vida sencilla, dominada por su amor por las historias y la escritura. Un día se da cuenta de que todos los libros de la biblioteca que tiene han sido prestados previamente por la misma persona: 'Seiji Amasawa'. Curioso por saber quién él es, Shizuku conoce a un chico de su edad al que encuentra exasperante, pero descubre para su sorpresa que él es su 'Príncipe de los Libros'. A medida que se acerca a él, se da cuenta de que él simplemente leyó todos esos libros para acercarse a él. El niño Seiji aspira a ser un fabricante de violines en Italia, y son sus sueños los que hacen que Shizuku se dé cuenta de que no tiene un camino claro para su vida. Sabiendo que su fuerza radica en escribir, pone a prueba su talento escribiendo una historia sobre Baron, una estatuilla de gato que pertenece al abuelo de Seiji. " ,
       "director" : "Yoshifumi Kondō" ,
       "productor" : "Toshio Suzuki" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/7/7b/Whisper_of_the_Heart.jpg" ,
@@ -1001,7 +1001,7 @@ exportar  predeterminado  {
     {
       "id" : "0440483e-ca0e-4120-8c50-4c8cd9b965d6" ,
       "title" : "Princesa Mononoke" ,
-      "description" : "Ashitaka, un príncipe de la tribu Ainu que desaparece, es maldecido por un dios jabalí demonizado y debe viajar al oeste para encontrar una cura. En el camino, se encuentra con San, una joven humana que lucha por proteger el bosque. , y Lady Eboshi, que está tratando de destruirlo. Ashitaka debe encontrar una manera de equilibrar este conflicto ". ,
+      "description" : "Ashitaka, un príncipe de la tribu Ainu que desaparece, es maldecido por un dios jabalí demonizado y debe viajar al oeste para encontrar una cura. En el camino, se encuentra con San, una joven humana que lucha por proteger el bosque. , y Lady Eboshi, que está tratando de destruirlo. Ashitaka debe encontrar una manera de equilibrar este conflicto. " ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
       "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg" ,
@@ -1145,7 +1145,7 @@ exportar  predeterminado  {
     {
       "id" : "45204234-adfd-45cb-a505-a8e7a676b114" ,
       "title" : "Mis vecinos los Yamada" ,
-      "description" : "Los Yamada son una típica familia japonesa de clase media en la zona urbana de Tokio y esta película nos muestra una variedad de episodios de sus vidas. Con historias que van desde lo chistoso hasta lo desgarrador, vemos a esta familia lidiar con los pequeños conflictos de la vida. , problemas y alegrías a su manera ". ,
+      "description" : "Los Yamada son una típica familia japonesa de clase media en la zona urbana de Tokio y esta película nos muestra una variedad de episodios de sus vidas. Con historias que van desde lo chistoso hasta lo desgarrador, vemos a esta familia lidiar con los pequeños conflictos de la vida. , problemas y alegrías a su manera. " ,
       "director" : "Isao Takahata" ,
       "productor" : "Toshio Suzuki" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbors_the_Yamadas.jpg" ,
@@ -1356,7 +1356,7 @@ exportar  predeterminado  {
     {
       "id" : "90b72513-afd4-4570-84de-a56c312fdf81" ,
       "title" : "El gato regresa" ,
-      "description" : "Haru, una colegiala aburrida de su rutina ordinaria, salva la vida de un gato inusual y, de repente, su mundo se transforma más allá de lo que jamás había imaginado. El Rey Gato recompensa su buena acción con una serie de regalos, incluido un ¡impactante propuesta de matrimonio para su hijo! Haru se embarca en un viaje inesperado al Reino de los Gatos, donde sus ojos se abren a un mundo completamente diferente ". ,
+      "description" : "Haru, una colegiala aburrida de su rutina ordinaria, salva la vida de un gato inusual y, de repente, su mundo se transforma más allá de lo que jamás había imaginado. El Rey Gato recompensa su buena acción con una serie de regalos, incluido un ¡impactante propuesta de matrimonio para su hijo! Haru se embarca en un viaje inesperado al Reino de los Gatos, donde sus ojos se abren a un mundo completamente diferente. " ,
       "director" : "Hiroyuki Morita" ,
       "productor" : "Toshio Suzuki" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Cat_Returns.jpg" ,
@@ -1613,7 +1613,7 @@ exportar  predeterminado  {
           "id" : "2354305f-dccd-4c44-a79e-cc60ba7376e6" ,
           "name" : "Castillo de Howl" ,
           "img" : "https://static.wikia.nocookie.net/studio-ghibli/images/1/12/HowlCastle.png" ,
-          "description" : "La casa del mago Howl. La escala cambia de una escena a otra". ,
+          "description" : "La casa del mago Howl. La escala cambia de una escena a otra." ,
           "vehicle_class" : "Castillo en movimiento" ,
           "longitud" : "desconocido" ,
           "piloto" : {
@@ -1882,7 +1882,7 @@ exportar  predeterminado  {
     {
       "id" : "2de9426b-914a-4a06-a3a0-5e6d9d3886f6" ,
       "title" : "El mundo secreto de Arrietty" ,
-      "description" : "Arrietty, de 14 años, y el resto de la familia Clock viven en pacífico anonimato mientras construyen su propio hogar con elementos 'prestados' de los habitantes humanos de la casa. Sin embargo, la vida de los Clocks cambia cuando un niño humano descubre Arrietty ". ,
+      "description" : "Arrietty, de 14 años, y el resto de la familia Clock viven en pacífico anonimato mientras construyen su propio hogar con elementos 'prestados' de los habitantes humanos de la casa. Sin embargo, la vida de los Clocks cambia cuando un niño humano descubre Arrietty. " ,
       "director" : "Hiromasa Yonebayashi" ,
       "productor" : "Toshio Suzuki" ,
       "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/46/The_Borrower_Arrietty.jpg" ,
@@ -1999,7 +1999,7 @@ exportar  predeterminado  {
     {
       "id" : "45db04e4-304a-4933-9823-33f389e8d74d" ,
       "title" : "Desde lo alto de Poppy Hill" ,
-      "description" : "La historia está ambientada en 1963 en Yokohama. Kokuriko Manor se encuentra en una colina con vista al puerto. Una niña de 16 años, Umi, vive en esa casa. Todas las mañanas iza una bandera de señalización frente al mar. bandera significa "Rezo por viajes seguros". Un niño de 17 años, Shun, siempre ve esta bandera desde el mar mientras viaja en un remolcador a la escuela. Gradualmente, la pareja se atrae el uno al otro, pero se enfrentan a una prueba repentina . Aun así, siguen adelante sin huir de enfrentar las penurias de la realidad ". ,
+      "description" : "La historia está ambientada en 1963 en Yokohama. Kokuriko Manor se encuentra en una colina con vista al puerto. Una niña de 16 años, Umi, vive en esa casa. Todas las mañanas iza una bandera de señalización frente al mar. bandera significa 'Rezo por viajes seguros'. Un niño de 17 años, Shun, siempre ve esta bandera desde el mar mientras viaja en un remolcador a la escuela. Gradualmente, la pareja se atrae el uno al otro, pero se enfrentan a una prueba repentina . Aun así, siguen adelante sin huir de enfrentar las penurias de la realidad. " ,
       "director" : "Gorō Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg" ,
@@ -2105,7 +2105,7 @@ exportar  predeterminado  {
     {
       "id" : "67405111-37a5-438f-81cc-4666af60c800" ,
       "title" : "El viento se levanta" ,
-      "description" : "Un amor de toda la vida por volar inspira al ingeniero de aviación japonés Jiro Horikoshi, cuya histórica carrera incluye la creación del avión de combate A-6M de la Segunda Guerra Mundial". ,
+      "description" : "Un amor de toda la vida por volar inspira al ingeniero de aviación japonés Jiro Horikoshi, cuya histórica carrera incluye la creación del avión de combate A-6M de la Segunda Guerra Mundial." ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
       "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg" ,
@@ -2211,7 +2211,7 @@ exportar  predeterminado  {
           "id" : "411f66ed0-771c-46d3-8f68-a3b65c6dd91c" ,
           "nombre" : "Mitsubishi 1MF9" ,
           "img" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Kazetachinu044.jpg" ,
-          "description" : "El Mitsubishi 1MF9 o Mitsubishi Experimental Taka-type Carrier Fighter era un prototipo de avión de combate japonés de la década de 1920. Era un biplano monomotor y monoplaza destinado a operar desde los portaaviones de la Armada Imperial Japonesa, pero solo se construyeron dos, siendo el tipo rechazado por la Armada ". ,
+          "description" : "El Mitsubishi 1MF9 o Mitsubishi Experimental Taka-type Carrier Fighter era un prototipo de avión de combate japonés de la década de 1920. Era un biplano monomotor y monoplaza destinado a operar desde los portaaviones de la Armada Imperial Japonesa, pero solo se construyeron dos, siendo el tipo rechazado por la Armada. " ,
           "vehicle_class" : "Avión de guerra" ,
           "longitud" : "8" ,
           "piloto" : {
@@ -2224,7 +2224,7 @@ exportar  predeterminado  {
     {
       "id" : "578ae244-7750-4d9f-867b-f3cd3d6fecf4" ,
       "title" : "El cuento de la princesa Kaguya" ,
-      "description" : "Un cortador de bambú llamado Sanuki no Miyatsuko descubre una niña en miniatura dentro de un brote de bambú brillante. Creyendo que es una presencia divina, él y su esposa deciden criarla como si fuera suya, llamándola 'Princesa'". ,
+      "description" : "Un cortador de bambú llamado Sanuki no Miyatsuko descubre una niña en miniatura dentro de un brote de bambú brillante. Creyendo que es una presencia divina, él y su esposa deciden criarla como si fuera suya, llamándola 'Princesa'." ,
       "director" : "Isao Takahata" ,
       "productor" : "Yoshiaki Nishimura" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg" ,
@@ -2330,7 +2330,7 @@ exportar  predeterminado  {
     {
       "id" : "5fdfb320-2a02-49a7-94ff-5ca418cae602" ,
       "title" : "Cuando Marnie estuvo allí" ,
-      "description" : "La película sigue a Anna Sasaki viviendo con sus parientes en la ciudad costera. Anna se encuentra con una mansión abandonada cercana, donde conoce a Marnie, una chica misteriosa que le pide que prometa mantener sus secretos para todos. Como el verano progresa, Anna pasa más tiempo con Marnie y, finalmente, Anna descubre la verdad sobre su familia y el cuidado de crianza ". ,
+      "description" : "La película sigue a Anna Sasaki viviendo con sus parientes en la ciudad costera. Anna se encuentra con una mansión abandonada cercana, donde conoce a Marnie, una chica misteriosa que le pide que prometa mantener sus secretos para todos. Como el verano progresa, Anna pasa más tiempo con Marnie y, finalmente, Anna descubre la verdad sobre su familia y el cuidado de crianza. " ,
       "director" : "Hiromasa Yonebayashi" ,
       "productor" : "Yoshiaki Nishimura" ,
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/7/7a/When_Marnie_Was_There.jpg" ,
