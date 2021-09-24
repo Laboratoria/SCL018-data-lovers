@@ -1,0 +1,95 @@
+*{
+  margin:0;
+
+}
+body{
+   background-image: url("/src/Imagenes/fondo.jpg");
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-size: cover;
+
+}
+
+.pestaña{
+    width: 200px;
+    height: 200px;
+}
+nav{
+    background-color: #06536F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+nav img{
+    width:20%;
+    height:10%;
+}
+
+
+ li{
+    list-style: none;
+    font-size: 30px;
+    padding-top: 40px;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;   
+}
+
+section{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+padding-top: 40px;
+}
+
+/*preguntar el lunes
+.category{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.search{
+    display:flex;
+    flex-direction: row;
+    flex-direction:row-reverse;
+    justify-content: flex-end;
+}*/
+main{
+    height: 400px;
+}
+footer{
+    background-color: #06536F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 150px;
+}
+footer p{
+    font-size: 20px;
+}
+.redesSociales{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.right{
+  display: flex;
+  flex-direction: row;
+}
+.copy{
+    display: flex;
+  flex-direction: row;
+}
