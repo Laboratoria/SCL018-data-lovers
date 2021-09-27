@@ -1,5 +1,6 @@
 *{
   margin:0;
+  cursor: url(/src/Imagenes/cursor.cur),auto;
 
 }
 body{
@@ -41,31 +42,31 @@ nav img{
 
 }
 a{
-    text-decoration: none;
+    
     color: #fff;
     padding: 30px;   
+}
+a:hover{
+    
+    color: rgb(121, 147, 170);
+       
 }
 
 section{
  display: flex;
  flex-direction: row;
- justify-content: space-evenly;
-padding-top: 40px;
+ justify-content: space-between;
+ padding-top: 40px;
+ margin:30px;
 }
-
-/*preguntar el lunes
-.category{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.filter{
+    width: 180px;
+    height: 30px;
+    border-radius:20px ;
     
 }
-.search{
-    display:flex;
-    flex-direction: row;
-    flex-direction:row-reverse;
-    justify-content: flex-end;
-}*/
+
+ 
 main{
     height: 400px;
 }
@@ -74,22 +75,38 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 150px;
+    height: 100px;
 }
 footer p{
-    font-size: 20px;
+    font-size: 15px;
+    padding-right: 30px;
+    padding-top: 15px;
 }
 .redesSociales{
     display: flex;
     flex-direction: row-reverse;
 
 }
+footer img{
+    width:50px ;
+    height:50px ;
+    padding: 10px;
+}
+.imgCopy{
+    width: 30px;
+    height: 30px;
+    
+}
+
 
 .right{
   display: flex;
   flex-direction: row;
+ height: 30px;
+ 
 }
 .copy{
-    display: flex;
+  display: flex;
   flex-direction: row;
+  
 }
