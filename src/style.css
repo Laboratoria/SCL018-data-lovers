@@ -42,14 +42,14 @@ nav img{
 
 }
 a{
-    
+    text-decoration: none;
     color: #fff;
     padding: 30px;   
 }
 a:hover{
     
     color: rgb(121, 147, 170);
-       
+      
 }
 
 section{
