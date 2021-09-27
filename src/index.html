@@ -9,17 +9,17 @@
   <body>
     <header>
       <nav>
-      <img src="Imagenes/totoro.jpeg">
+      <img src="Imagenes/totoro.jpeg"><a href="index.html"></a>
       <ul>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Películas</a></li>
-        <li><a href="#">Top 10</a></li>
+        <li><a href="indexHistoria.html">Historia</a></li>
+        <li><a href="indexPeli.html">Películas</a></li>
+        <li><a href="indexTop.html">Top 10</a></li>
       </ul>
     </nav>
     </header>
     <section>
       <div class ="category">
-      <select name="director">
+      <select name="director" class="filter">
         <option value="todas" autofocus>Todas</option>
         <option value="Hayao">Hayao Miyazaki</option>
         <option value="Isao">Isao Takahata</option>
@@ -31,14 +31,14 @@
         <option value="Yoshiaki">Yoshiaki Nishimura</option>
         <option value="Yoshifumi">Yoshifumi Kondō</option>
       </select>
-      <select name="orden">
+      <select name="orden" class="filter">
         <option value="todas" autofocus>Todas</option>
         <option value="Alfabetico">Alfabético</option>
         <option value="Año"> Año</option>
       </select>
     </div>
     <div class="search">
-      <input type="search" placeholder="Buscar">
+      <input type="search" placeholder="Buscar" class="filter">
     </div>
     </section>
     <main></main>
@@ -50,7 +50,7 @@
         <li><img src="Imagenes/facebook.png"></li>
         </div>
         <div class="right">
-        <li class="copy"><img src="Imagenes/copyright.png">
+        <li class="copy"><img src="Imagenes/copyright.png" class="imgCopy">
           <p> Todos los Derechos Reservados</p></li>
         </div>
         </ul>

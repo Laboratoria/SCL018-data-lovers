@@ -5,18 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagenes/kiki.jpg" class="pestaña">
+    <link rel="stylesheet" href="stylePeli.css" />
     <title>Películas</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="Imagenes/totoro.jpeg">
+          <img src="Imagenes/totoro.jpeg"><a href="index.html"></a>
             <ul>
-              <li><a href="#">Historia</a></li>
-              <li><a href="#">Películas</a></li>
-              <li><a href="#">Top 10</a></li>
+              <li><a href="indexHistoria.html">Historia</a></li>
+              <li><a href="indexPeli.html">Películas</a></li>
+              <li><a href="indexTop.html">Top 10</a></li>
             </ul>
           </nav>
         </header>
+        <section>
+          <div class ="characters">
+          <select name="species">
+            <option value="todas" autofocus>Todas</option>
+            <option value="Hayao">Hayao Miyazaki</option>
+            
+          </select>
+        </section>
+        <main></main>
+        <footer>
+          <ul>
+            <div class="redesSociales">
+            <li><img src="Imagenes/youtube.png"></li>
+            <li><img src="Imagenes/instagram.png"></li>
+            <li><img src="Imagenes/facebook.png"></li>
+            </div>
+            <div class="right">
+            <li class="copy"><img src="Imagenes/copyright.png" class="imgCopy">
+              <p> Todos los Derechos Reservados</p></li>
+            </div>
+            </ul>
+            
+        </footer>
+        <div id="root"></div>
+        <script src="main.js" type="module"></script>
 </body>
 </html>
