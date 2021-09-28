@@ -1,79 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
 *{
     margin:0;
     cursor: url(/src/Imagenes/cursor.cur),auto;
-  
-  }
-  body{
-     background-image: url("/src/Imagenes/fondo.jpg");
-     background-repeat: no-repeat;
-     background-position-x: center;
-     background-size: cover;
-  
-  }
-  
-  .pestaña{
-      width: 200px;
-      height: 200px;
-  }
-  nav{
-      background-color: #06536F;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      
-  }
-  ul{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  
-  }
-  
-  nav img{
-      width:20%;
-      height:10%;
-  }
-  
-  
-   li{
-      list-style: none;
-      font-size: 30px;
-      padding-top: 40px;
-  
-  }
-  a{
-      text-decoration: none;
-      color: #fff;
-      padding: 30px;   
-  }
-  a:hover{
+    font-family: 'Open Sans', sans-serif;
+
+}
+body{
+    background-image: url("/src/Imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+
+}
+
+.pestaña{
+    width: 200px;
+    height: 200px;
+}
+nav{
+    background-color: #06536F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img{
+    width:20%;
+    height:10%;
+}
+
+li{
+    list-style: none;
+    font-size: 30px;
+    padding-top: 40px;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;   
+}
+a:hover{
     
     color: rgb(121, 147, 170);
-       
 }
-  
-  section{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-  padding-top: 40px;
-  }
-  
-  main{
-      height: 400px;
-  }
-  footer{
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+main{
+    height: 500px;
+}
+footer{
     background-color: #06536F;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100px;
 }
+
 footer p{
     font-size: 15px;
     padding-right: 30px;
     padding-top: 15px;
 }
+
 .redesSociales{
     display: flex;
     flex-direction: row-reverse;
@@ -92,13 +94,13 @@ footer img{
 
 
 .right{
-  display: flex;
-  flex-direction: row;
- height: 30px;
- 
+display: flex;
+flex-direction: row;
+height: 30px;
+
 }
 .copy{
-  display: flex;
-  flex-direction: row;
-  
+display: flex;
+flex-direction: row;
+
 }
