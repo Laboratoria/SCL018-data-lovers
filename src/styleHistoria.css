@@ -8,6 +8,7 @@
      background-repeat: no-repeat;
      background-position-x: center;
      background-size: cover;
+     z-index: -1;
   
   }
   
@@ -61,7 +62,15 @@
   
   
   main{
-      height: 400px;
+
+      height: 600px;
+
+      
+  }
+
+  .srHayao{
+      width: 200px;
+      height: 300px;
   }
   footer{
     background-color: #06536F;
