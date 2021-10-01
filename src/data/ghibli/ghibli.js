@@ -1,6 +1,6 @@
 export default  {
   "estudio" : "Studio Ghibli Inc." ,
-  "películas" : [
+  "peliculas" : [
     {
       "id" : "2baf70d1-42bb-4437-b551-e5fed5a87abe" ,
       "title" : "Castillo en el cielo" ,
@@ -209,7 +209,7 @@ export default  {
       "description" : "Dos hermanas se trasladan al campo con su padre para estar más cerca de su madre hospitalizada y descubrir que los árboles circundantes están habitados por Totoros, espíritus mágicos del bosque. Cuando la menor se escapa de casa, la mayor la hermana busca la ayuda de los espíritus para encontrarla. " ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Hayao Miyazaki" ,
-      "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg" ,
+      "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg" ,
       "release_date" : "1988" ,
       "rt_score" : "93" ,
       "gente" : [
@@ -683,7 +683,7 @@ export default  {
       "description" : "Porco Rosso, conocido en Japón como Crimson Pig (Kurenai no Buta) es la sexta película animada de Hayao Miyazaki y se estrenó en 1992. Te presentan a un luchador italiano de la Primera Guerra Mundial, que ahora vive como freelance cazarrecompensas persiguiendo 'piratas aéreos' en el mar Adriático. Le han dado una maldición que cambió su cabeza a la de un cerdo. Una vez llamado Marco Pagot, ahora es conocido en el mundo como 'Porco Rosso', italiano para 'Rojo Cerdo. '" ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
-      "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg" ,
+      "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg" ,
       "release_date" : "1992" ,
       "rt_score" : "94" ,
       "gente" : [
@@ -814,7 +814,7 @@ export default  {
       "description" : "A medida que el desarrollo de la ciudad humana invade el hábitat del bosque y la pradera de la población de mapaches, los mapaches se enfrentan a la posibilidad real de extinción. En respuesta, los mapaches se involucran en una lucha desesperada para detener la construcción y preservar su hogar." ,
       "director" : "Isao Takahata" ,
       "productor" : "Toshio Suzuki" ,
-      "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg" ,
+      "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg" ,
       "release_date" : "1994" ,
       "rt_score" : "78" ,
       "gente" : [
@@ -1004,7 +1004,7 @@ export default  {
       "description" : "Ashitaka, un príncipe de la tribu Ainu que desaparece, es maldecido por un dios jabalí demonizado y debe viajar al oeste para encontrar una cura. En el camino, se encuentra con San, una joven humana que lucha por proteger el bosque. , y Lady Eboshi, que está tratando de destruirlo. Ashitaka debe encontrar una manera de equilibrar este conflicto. " ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
-      "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg" ,
+      "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg" ,
       "release_date" : "1997" ,
       "rt_score" : "92" ,
       "gente" : [
@@ -1885,7 +1885,7 @@ export default  {
       "description" : "Arrietty, de 14 años, y el resto de la familia Clock viven en pacífico anonimato mientras construyen su propio hogar con elementos 'prestados' de los habitantes humanos de la casa. Sin embargo, la vida de los Clocks cambia cuando un niño humano descubre Arrietty. " ,
       "director" : "Hiromasa Yonebayashi" ,
       "productor" : "Toshio Suzuki" ,
-      "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/46/The_Borrower_Arrietty.jpg" ,
+      "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/46/The_Borrower_Arrietty.jpg" ,
       "release_date" : "2010" ,
       "rt_score" : "95" ,
       "gente" : [
@@ -2108,7 +2108,7 @@ export default  {
       "description" : "Un amor de toda la vida por volar inspira al ingeniero de aviación japonés Jiro Horikoshi, cuya histórica carrera incluye la creación del avión de combate A-6M de la Segunda Guerra Mundial." ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
-      "cartel" : "https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg" ,
+      "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg" ,
       "release_date" : "2013" ,
       "rt_score" : "89" ,
       "gente" : [
