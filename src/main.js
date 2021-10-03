@@ -9,8 +9,8 @@ const container = document.getElementById("allFirst");
 
 const img = (films) => {
     return `
-     <div class= "orderPoster">
-         <img src= "${films.poster}"/>
+     <div>
+         <img src= "${films.poster}" class= "orderPoster"/>
      </div>`;
 };
 

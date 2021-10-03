@@ -66,7 +66,7 @@ section{
  display: flex;
  flex-direction: row;
  justify-content: space-between;
- padding-top: 40px;
+ padding-top: 20px;
  margin:30px;
 }
 
@@ -77,24 +77,37 @@ section{
 }
 
 main{
-    height: auto;
-    width: auto;
-    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#allFirst{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    
 }
 
-:root {
-    --w: calc(70vw/ 4);
-    --h: calc(70vh/ 5);
+.orderPoster{
+    padding: 20px;
+    border-radius: 30px;
+    transition: 2s; 
+    width:240px;
+    height: 323px;
+    filter: drop-shadow(8px 8px 8px black)
+
+
+
+    
+
 }
-
-.orderPoster {
-    width: var(--w);
-    height: var(--h);
-    position: relative;
+.orderPoster:hover{
+    transform: scale(1.2);
+    
 }
-
-
-
 
 footer{
     background-color: #06536F;
