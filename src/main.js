@@ -18,22 +18,14 @@ for (let i = 0; i < films.length; i++) {
     container.innerHTML += img(films[i]); 
 }
 
-const search = document.querySelectorAll("filter");
-const showCard = films.poster;
-const result = document.querySelector()
-search = () => {
-    result.innerHTML='';
-    const text = search.value.toLowerCase(); 
+const search = document.getElementById("filter");
 
-    for (let i = 0; i < films.length; i++) {
-    
-    const card = showCard.toLowerCase();
+const look = search.addEventListener("keyup", () => {
+    container.innerHTML='';
+    const text = search.value; 
+    container.innerHTML += text.img;
 
-    if (card.indexOf(text) !== -1) {
-        result
-
-        
-    }
-        
-    }
-}
+   // if (films.poster.indexOf(text) !== -1) {
+     //   container.innerHTML += img
+    //}});
+});
