@@ -20,12 +20,17 @@ for (let i = 0; i < films.length; i++) {
 
 const search = document.getElementById("filter");
 
-const look = search.addEventListener("keyup", () => {
-    container.innerHTML='';
-    const text = search.value; 
-    container.innerHTML += text.img;
+search.addEventListener("keydown", (key) => {
+    //console.log(key);
+    if(key.key==="Enter"){
+        const text = search.value; 
+        //container.innerHTML += text.img;
 
-   // if (films.poster.indexOf(text) !== -1) {
-     //   container.innerHTML += img
-    //}});
+        if (text == films.title) {
+            alert("es correcto");
+        }else{
+            alert("ingrese texto")
+        }
+    }
 });
+
