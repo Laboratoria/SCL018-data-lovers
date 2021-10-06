@@ -21,16 +21,21 @@ for (let i = 0; i < films.length; i++) {
 const search = document.getElementById("filter");
 
 search.addEventListener("keydown", (key) => {
-    //console.log(key);
     if(key.key==="Enter"){
-        const text = search.value; 
+        const text = search.value.toLowerCase(); 
         //container.innerHTML += text.img;
 
-        if (text == films.title) {
-            alert("es correcto");
-        }else{
-            alert("ingrese texto")
-        }
-    }
+for (let i = 0; i < films.length; i++) {
+    if (text == films[i].title.toLowerCase()) {
+        container.innerHTML = img(films[i]);
+        break; 
+     }else{
+         alert("ingrese texto");
+         break; 
+        } 
+        
+        
+ }
+ }     
 });
 
