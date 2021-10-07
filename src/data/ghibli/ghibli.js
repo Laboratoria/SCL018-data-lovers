@@ -679,7 +679,7 @@ export default  {
     } ,
     {
       "id" : "ebbb6b7c-945c-41ee-a792-de0e43191bd8" ,
-      "título" : "Porco Rosso" ,
+      "title" : "Porco Rosso" ,
       "description" : "Porco Rosso, conocido en Japón como Crimson Pig (Kurenai no Buta) es la sexta película animada de Hayao Miyazaki y se estrenó en 1992. Te presentan a un luchador italiano de la Primera Guerra Mundial, que ahora vive como freelance cazarrecompensas persiguiendo 'piratas aéreos' en el mar Adriático. Le han dado una maldición que cambió su cabeza a la de un cerdo. Una vez llamado Marco Pagot, ahora es conocido en el mundo como 'Porco Rosso', italiano para 'Rojo Cerdo. '" ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
@@ -810,7 +810,7 @@ export default  {
     } ,
     {
       "id" : "1b67aa9a-2e4a-45af-ac98-64d6ad15b16c" ,
-      "título" : "Pom Poko" ,
+      "title" : "Pom Poko" ,
       "description" : "A medida que el desarrollo de la ciudad humana invade el hábitat del bosque y la pradera de la población de mapaches, los mapaches se enfrentan a la posibilidad real de extinción. En respuesta, los mapaches se involucran en una lucha desesperada para detener la construcción y preservar su hogar." ,
       "director" : "Isao Takahata" ,
       "productor" : "Toshio Suzuki" ,
@@ -1731,7 +1731,7 @@ export default  {
     } ,
     {
       "id" : "758bf02e-3122-46e0-884e-67cf83df1786" ,
-      "título" : "Ponyo en el acantilado junto al mar" ,
+      "title" : "Ponyo en el acantilado junto al mar" ,
       "description" : "El hijo de un marinero, Sosuke de 5 años vive una vida tranquila en un acantilado junto al mar con su madre Lisa. Un fatídico día, encuentra un hermoso pez de colores atrapado en una botella en la playa y al rescatarla, la llama Ponyo. Pero ella no es un pez dorado común. Hija de un mago magistral y una diosa del mar, Ponyo usa la magia de su padre para transformarse en una niña y rápidamente se enamora de Sosuke, pero el uso de una hechicería tan poderosa causa un desequilibrio peligroso en el mundo. A medida que la luna se acerca cada vez más a la tierra y el padre de Ponyo envía las poderosas olas del océano para encontrar a su hija, los dos niños se embarcan en la aventura de su vida para salvar el mundo y cumplir el sueño de Ponyo de convertirse en humano. . " ,
       "director" : "Hayao Miyazaki" ,
       "productor" : "Toshio Suzuki" ,
