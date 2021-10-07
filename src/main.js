@@ -22,20 +22,33 @@ const search = document.getElementById("filter");
 
 search.addEventListener("keydown", (key) => {
     if(key.key==="Enter"){
-        const text = search.value.toLowerCase(); 
-        //container.innerHTML += text.img;
+    const text = search.value.toLowerCase(); 
 
-for (let i = 0; i < films.length; i++) {
+    const titleFilter = films.filter(x=> (x.title.toLowerCase()).includes(text));
+    if (titleFilter.length > 0) {
+        for (let i = 0; i < films.length; i++) {
+            container.innerHTML = img(films[i]);
+            //container.innerHTML += img(title[0]);
+        }   
+         container.innerHTML += img(titleFilter[0]);
+        
+     }else{
+         alert("Película no encontrada");
+         
+        } 
+
+/*for (let i = 0; i < films.length; i++) {
+
     if (text == films[i].title.toLowerCase()) {
         container.innerHTML = img(films[i]);
         break; 
      }else{
-         alert("ingrese texto");
+         alert("Película no encontrada");
          break; 
-        } 
+        } */
         
         
  }
- }     
+ //}     
 });
 
