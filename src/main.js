@@ -23,32 +23,26 @@ const search = document.getElementById("filter");
 search.addEventListener("keydown", (key) => {
     if(key.key==="Enter"){
     const text = search.value.toLowerCase(); 
-
+    
     const titleFilter = films.filter(x=> (x.title.toLowerCase()).includes(text));
+
     if (titleFilter.length > 0) {
-        for (let i = 0; i < films.length; i++) {
-            container.innerHTML = img(films[i]);
-            //container.innerHTML += img(title[0]);
-        }   
-         container.innerHTML += img(titleFilter[0]);
-        
+        container.innerHTML = " ";
+        for (let i = 0; i < titleFilter.length; i++) {
+          container.innerHTML += img(titleFilter[i]);
+        }  
      }else{
-         alert("Película no encontrada");
-         
+         alert("Película no encontrada");     
         } 
 
-/*for (let i = 0; i < films.length; i++) {
-
-    if (text == films[i].title.toLowerCase()) {
-        container.innerHTML = img(films[i]);
-        break; 
-     }else{
-         alert("Película no encontrada");
-         break; 
-        } */
-        
-        
+//for (let i = 0; i < films.length; i++) {
+   // if (text == films[i].title.toLowerCase()) {
+     //   container.innerHTML = img(films[i]);
+       // break; 
+     //}else{
+       //  alert("Película no encontrada");
+         //break; 
+      //  }       
  }
- //}     
-});
+ });
 
