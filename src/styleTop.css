@@ -67,7 +67,32 @@ section{
 }
 
 main{
-    height: 500px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+#allFirst{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    
+}
+
+.orderPoster{
+    padding: 20px;
+    border-radius: 30px;
+    transition: 2s; 
+    width:240px;
+    height: 323px;
+    filter: drop-shadow(8px 8px 8px black)
+}
+.orderPoster:hover{
+    transform: scale(1.2);
+    
 }
 footer{
     background-color: #06536F;
