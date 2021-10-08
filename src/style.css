@@ -99,10 +99,6 @@ main{
     height: 323px;
     filter: drop-shadow(8px 8px 8px black)
 
-
-
-    
-
 }
 .orderPoster:hover{
     transform: scale(1.2);
