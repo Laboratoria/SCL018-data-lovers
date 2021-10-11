@@ -145,3 +145,72 @@ footer img{
   flex-direction: row;
   
 }
+
+@media screen and (max-width: 850px) {
+
+a{
+    font-size: 20px; 
+    padding: 8px;
+}
+#allFirst{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+       
+}
+
+.orderPoster{  
+    width:140px;
+    height: 223px;   
+}
+ 
+.filter{
+       width: 120px;
+       height: 30px;    
+   }
+
+footer p{
+    font-size: 12px;
+    
+}
+footer img{
+    width:30px ;
+    height:30px ;
+    padding: 5px;
+}
+.imgCopy{
+    width: 20px;
+    height: 20px;
+    
+}
+footer{
+    height: 60px;
+}
+}
+@media screen and (max-width: 500px) {
+    audio{
+        align-items: center;
+        padding-left: 100px;
+    
+    }
+    nav{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    nav img{
+        width:30%;
+        height:20%;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    .orderPoster{  
+        width:240px;
+        height: 323px;   
+    }
+    
+
+}
