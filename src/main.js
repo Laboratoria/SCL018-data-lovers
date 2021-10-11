@@ -35,13 +35,13 @@ search.addEventListener("keydown", (key) => {
     }});
 
 //FILTRO ALFABETICO
-const order = document.getElementById("order");
+//const order = document.getElementById("order");
 //const az = document.getElementById("az");
 
-order.addEventListener("click", () => {
-    const az = document.getElementById("az").value;
-    //const titleFilter = films.filter(x=> (x.title.toLowerCase()));
-    films.sort( (a,b) => {
+/*document.getElementById("az").value = addEventListener("click", () => {
+    //const az = document.getElementById("az").value;
+    const titleFilter = films.filter(x=> (x.title.toLowerCase()));
+    titleFilter.sort( (a,b) => {
         
       const titleA = a.title.toLowerCase();
       const titleB = b.title.toLowerCase();
@@ -51,11 +51,11 @@ order.addEventListener("click", () => {
       if(titleA > titleB){
         container.innerHTML = img (1);
       }
-      console.log(films);
+      return 0;
 
     }); 
     
     //container.innerHTML = img(titleFilter[0]);
      //console.log(a-b);
 
-});
+});*/
