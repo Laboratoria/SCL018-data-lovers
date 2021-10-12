@@ -29,33 +29,30 @@ search.addEventListener("keydown", (key) => {
         for (let i = 0; i < titleFilter.length; i++) {
           container.innerHTML += img(titleFilter[i]);
         }  
-     }else{
-         alert("Película no encontrada");     
+      }else{
+          alert("Película no encontrada");     
         } 
     }});
 
+
 //FILTRO ALFABETICO
-//const order = document.getElementById("order");
-//const az = document.getElementById("az");
+const order = document.getElementById("order");
 
-/*document.getElementById("az").value = addEventListener("click", () => {
-    //const az = document.getElementById("az").value;
+  order.addEventListener("change", (event) => {
+  const az = document.getElementById("az").value;
     const titleFilter = films.filter(x=> (x.title.toLowerCase()));
-    titleFilter.sort( (a,b) => {
-        
-      const titleA = a.title.toLowerCase();
-      const titleB = b.title.toLowerCase();
-      if(titleA < titleB){
-        container.innerHTML = img (-1);
-      }
-      if(titleA > titleB){
-        container.innerHTML = img (1);
-      }
-      return 0;
-
-    }); 
     
-    //container.innerHTML = img(titleFilter[0]);
-     //console.log(a-b);
+    for (let i = 0; i < titleFilter.length; i++) {
+      
+      const algo= titleFilter.sort((t1,t2) => {
+        return (t1.title < t2.title) ? -1:1
 
-});*/
+  
+      })
+      container.innerHTML += img(titleFilter[i].title);
+      //container.innerHTML += img(titleFilter[i].title);
+      //console.log(titleFilter[i].title);
+
+    }  
+
+});

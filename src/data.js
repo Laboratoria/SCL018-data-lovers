@@ -7,3 +7,5 @@ export const example = () => {
 export const anotherExample = () => {
   return 'OMG';
 };
+
+//export const dataFilter =(data, ALGO)
