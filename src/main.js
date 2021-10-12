@@ -49,9 +49,9 @@ const order = document.getElementById("order");
 
   
       })
-      container.innerHTML += img(titleFilter[i].title);
       //container.innerHTML += img(titleFilter[i].title);
-      //console.log(titleFilter[i].title);
+      //container.innerHTML += img(titleFilter[i].title);
+      console.log(titleFilter[i].title);
 
     }  
 
