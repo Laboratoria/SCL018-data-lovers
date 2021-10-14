@@ -54,14 +54,15 @@ order.addEventListener("change", (event) => {
   //FILTRO AÑO
   if (option === "Año") {
     container.innerHTML = " ";
-    const añoFilter = films.filter(x => (x.release_date));
+    const yearFilter = films.filter(x => (x.release_date));
     
-    for (let i = 0; i < añoFilter.length; i++) {
-      añoFilter.sort((a, b) => {
+    for (let i = 0; i < yearFilter.length; i++) {
+      yearFilter.sort((a, b) => {
         return a.release_date - b.release_date
-      })
-      container.innerHTML += img(añoFilter[i]);
-      //console.log(añoFilter[i].release_date);
+      }
+
+      container.innerHTML += img(yearFilter[i]);
+      console.log(yearFilter[i].release_date);
     }
   }
   //FILTRO TODAS
