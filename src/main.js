@@ -59,7 +59,7 @@ order.addEventListener("change", (event) => {
     for (let i = 0; i < yearFilter.length; i++) {
       yearFilter.sort((a, b) => {
         return a.release_date - b.release_date
-      }
+      })
 
       container.innerHTML += img(yearFilter[i]);
       console.log(yearFilter[i].release_date);
