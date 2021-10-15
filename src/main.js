@@ -8,7 +8,7 @@ const container = document.getElementById("allFirst");
 const img = (films) => {
   return `
     <div>
-        <img src= "${films.poster}" class= "orderPoster"/>
+        <img src= "${films.poster}" id="${films.id}" class= "orderPoster"/>
     </div>`;
 };
 
@@ -134,3 +134,38 @@ director.addEventListener("change", (event) => {
     }
 });
 
+//PAGINAS DE DATOS
+
+const imgData = (films) => {
+  return `
+    <div>
+        <img src= "${films.poster}" class= "orderPoster"/>
+        <ul class= "info">
+        <li>"${films.title}"</li>
+        <li>"${films.release_date}"</li>
+        <li>"${films.producer}"</li>
+        <li>"${films.director}"</li>
+        <li>"${films.rt_score}"</li>
+        <li>"${films.description}"</li>
+      </ul>
+    </div>`;
+};
+
+const images = document.getElementsByClassName("orderPoster");
+/*img.addEventListener("click", () => {
+  container.innerHTML = " ";
+  //const clickPoster = films.filter(x => (x.poster)); 
+for (let i = 0; i < films.length; i++) {
+  container.innerHTML += imgData(films[i]);
+}});*/
+
+for (let i = 0; i < images.length; i++) {
+  const element = images[i];
+ // console.log(element);
+  element.addEventListener("click", (e) =>{
+   console.log(e);
+  })
+}
+
+
+//console.log(images);
