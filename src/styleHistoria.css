@@ -80,6 +80,7 @@ main{
     margin: 50px;
     margin-top: 25px;
     padding: 30px;
+    border-radius: 10px;
 }
 
 h2,p{

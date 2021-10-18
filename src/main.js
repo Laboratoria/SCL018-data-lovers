@@ -51,6 +51,7 @@ order.addEventListener("change", (event) => {
       //console.log(titleFilter[i].title);
     }
   }
+
   //FILTRO AÑO
   if (option === "Año") {
     container.innerHTML = " ";
@@ -65,6 +66,7 @@ order.addEventListener("change", (event) => {
       //console.log(yearFilter[i].release_date);
     }
   }
+
   //FILTRO TODAS
   if (option === "Todas") {
     container.innerHTML = " ";
@@ -86,7 +88,7 @@ director.addEventListener("change", (event) => {
     if (directorOption === "Hayao") {
       container.innerHTML = " ";
       const hayaoFilter = films.filter(x => (x.director === "Hayao Miyazaki"));
-     for (let i = 0; i < hayaoFilter.length; i++) {
+      for (let i = 0; i < hayaoFilter.length; i++) {
         container.innerHTML += img(hayaoFilter[i]);
         //console.log(hayaoFilter[i].director);  
       }
@@ -94,7 +96,7 @@ director.addEventListener("change", (event) => {
     if (directorOption === "Isao") {
       container.innerHTML = " ";
       const isaoFilter = films.filter(x => (x.director === "Isao Takahata"));
-     for (let i = 0; i < isaoFilter.length; i++) {
+      for (let i = 0; i < isaoFilter.length; i++) {
         container.innerHTML += img(isaoFilter[i]);
         //console.log(isaoFilter[i].director); 
       }
@@ -102,7 +104,7 @@ director.addEventListener("change", (event) => {
     if (directorOption === "Gorō") {
       container.innerHTML = " ";
       const goroFilter = films.filter(x => (x.director === "Gorō Miyazaki"));
-     for (let i = 0; i < goroFilter.length; i++) {
+      for (let i = 0; i < goroFilter.length; i++) {
         container.innerHTML += img(goroFilter[i]);
         //console.log(goroFilter[i].director);
         
@@ -111,7 +113,7 @@ director.addEventListener("change", (event) => {
     if (directorOption === "Hiroyuki") {
       container.innerHTML = " ";
       const hiroyukiFilter = films.filter(x => (x.director === "Hiroyuki Morita"));
-     for (let i = 0; i < hiroyukiFilter.length; i++) {
+      for (let i = 0; i < hiroyukiFilter.length; i++) {
         container.innerHTML += img(hiroyukiFilter[i]);
         //console.log(hiroyukiFilter[i].director);  
       }
@@ -119,7 +121,7 @@ director.addEventListener("change", (event) => {
     if (directorOption === "Hiromasa") {
       container.innerHTML = " ";
       const hiromasaFilter = films.filter(x => (x.director === "Hiromasa Yonebayashi"));
-     for (let i = 0; i < hiromasaFilter.length; i++) {
+      for (let i = 0; i < hiromasaFilter.length; i++) {
         container.innerHTML += img(hiromasaFilter[i]);
         //console.log(hiromasaFilter[i].director);  
       }
@@ -127,7 +129,7 @@ director.addEventListener("change", (event) => {
     if (directorOption === "Yoshifumi") {
       container.innerHTML = " ";
       const yoshifumiFilter = films.filter(x => (x.director === "Yoshifumi Kondō"));
-     for (let i = 0; i < yoshifumiFilter.length; i++) {
+      for (let i = 0; i < yoshifumiFilter.length; i++) {
         container.innerHTML += img(yoshifumiFilter[i]);
         //console.log(yoshifumiFilter[i].director); 
       }
@@ -138,18 +140,41 @@ director.addEventListener("change", (event) => {
 
 const imgData = (films) => {
   return `
+    <div class= "orderInfo">
     <div>
         <img src= "${films.poster}" class= "orderPoster"/>
-        <ul class= "info">
-        <li>"${films.title}"</li>
-        <li>"${films.release_date}"</li>
-        <li>"${films.producer}"</li>
-        <li>"${films.director}"</li>
-        <li>"${films.rt_score}"</li>
-        <li>"${films.description}"</li>
-      </ul>
-    </div>`;
+    </div>
+    <div class= "info"> 
+        <ul class= "list">
+        <li> <strong> Película: </strong> "${films.title}"</li>
+        <li> <strong> Año: </strong> "${films.release_date}"</li>
+        <li> <strong> Productor: </strong> "${films.producer}"</li>
+        <li> <strong> Director: </strong> "${films.director}"</li>
+        <li> <strong> Puntaje: </strong> "${films.rt_score}"</li>
+        <li> <strong> Reseña: </strong> "${films.description}"</li>
+        </ul>
+    </div>
+    </div>
+    <div> 
+    <img src= "${films.gente}" class= "orderPoster"/>
+    </div>
+    <div> 
+    <img src= "${films.ubicaciones}" class= "orderPoster"/>
+    </div>
+    <div> 
+    <img src= "${films.vehiculos}" class= "orderPoster"/>
+    </div>
+    `;
 };
+
+/*const person = films.gente;
+for (let i = 0; i < person.length; i++) {
+  container.innerHTML += imgData(person[i]);
+  console.log(person);
+}*/
+
+
+
 
 const images = document.getElementsByClassName("orderPoster");
 /*img.addEventListener("click", () => {
@@ -166,7 +191,7 @@ for (let i = 0; i < images.length; i++) {
     container.innerHTML = " ";
     const currentId = e.target.getAttribute("id");
    //console.log(e.target.getAttribute("id"));
-   printFilmData (currentId);
+    printFilmData (currentId);
   })
 }
 

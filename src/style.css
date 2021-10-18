@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
 
 *{
-  margin:0;
-  cursor: url(/imagenes/cursor.cur),auto;
-  font-family: 'Open Sans', sans-serif;
-
+    margin:0;
+    cursor: url(/imagenes/cursor.cur),auto;
+    font-family: 'Open Sans', sans-serif;
 }
-body{
-   background-image: url("/imagenes/fondo.jpg");
-   background-repeat: no-repeat;
-   background-position-x: center;
-   background-size: cover;
 
+body{
+    background-image: url("/imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
 }
 
 .pestaña{
@@ -30,13 +29,12 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
+
 ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 nav img{
@@ -44,30 +42,28 @@ nav img{
     height:10%;
 }
 
-
- li{
+.header{
     list-style: none;
     font-size: 30px;
     padding-top: 40px;
-
 }
+
 a{
     text-decoration: none;
     color: #fff;
     padding: 30px;   
 }
+
 a:hover{
-    
     color: rgb(121, 147, 170);
-      
 }
 
 section{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding-top: 20px;
- margin:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin:30px;
 }
 
 .filter{
@@ -82,13 +78,13 @@ main{
     display: flex;
     flex-direction: row;
 }
+
 #allFirst{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 100px;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;   
 }
 
 .orderPoster{
@@ -98,8 +94,8 @@ main{
     width:240px;
     height: 323px;
     filter: drop-shadow(8px 8px 8px black)
-
 }
+
 .orderPoster:hover{
     transform: scale(1.2);
     
@@ -112,38 +108,61 @@ footer{
     justify-content: flex-end;
     height: 100px;
 }
+
 footer p{
     font-size: 15px;
     padding-right: 30px;
     padding-top: 15px;
 }
+
 .redesSociales{
     display: flex;
     flex-direction: row-reverse;
-
+    list-style: none;
 }
+
 footer img{
     width:50px ;
     height:50px ;
     padding: 10px;
 }
+
 .imgCopy{
     width: 30px;
-    height: 30px;
-    
+    height: 30px;  
 }
-
 
 .right{
-  display: flex;
-  flex-direction: row;
- height: 30px;
- 
+    display: flex;
+    flex-direction: row;
+    height: 30px;
 }
+
 .copy{
-  display: flex;
-  flex-direction: row;
-  
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    background-color:  rgb(31, 75, 102, 0.60);
+    width: 900px;
+    height: 100%;
+    line-height: 1.5;
+    border-radius: 10px;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 30px;
+    list-style: none;
+}
+
+.orderInfo{
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 850px) {
@@ -152,42 +171,46 @@ a{
     font-size: 20px; 
     padding: 8px;
 }
+
 #allFirst{
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-left: 0;
-       
 }
 
 .orderPoster{  
     width:140px;
     height: 223px;   
 }
- 
+
 .filter{
-       width: 120px;
-       height: 30px;    
-   }
+    width: 120px;
+    height: 30px;   
+}
 
 footer p{
     font-size: 12px;
     
 }
+
 footer img{
     width:30px ;
     height:30px ;
     padding: 5px;
 }
+
 .imgCopy{
     width: 20px;
     height: 20px;
-    
 }
+
 footer{
     height: 60px;
 }
+
 }
+
 @media screen and (max-width: 500px) {
     audio{
         align-items: center;
@@ -206,6 +229,7 @@ footer{
     }
     
 }
+
 @media screen and (max-width: 360px) {
     .orderPoster{  
         width:240px;
