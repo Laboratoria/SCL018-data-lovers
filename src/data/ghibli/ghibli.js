@@ -188,7 +188,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [
+      "vehiculos" : [
         {
           "id" : "4e09b023-f650-4747-9ab9-eacf14540cfb" ,
           "name" : "Destructor aéreo Goliat" ,
@@ -349,7 +349,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "ea660b10-85c4-4ae3-8a5f-41cea3648e3e" ,
@@ -475,7 +475,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "12cfb892-aac0-4c5b-94af-521852e46d6a" ,
@@ -539,7 +539,7 @@ export default  {
         }
       ] ,
       "ubicaciones" : [ ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "4e236f34-b981-41c3-8c65-f8c9000b94e7" ,
@@ -675,7 +675,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "ebbb6b7c-945c-41ee-a792-de0e43191bd8" ,
@@ -781,7 +781,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [
+      "vehiculos" : [
         {
           "id" : "d8f893b5-1dd9-41a1-9918-0099c1aa2de8" ,
           "nombre" : "Red Wing" ,
@@ -880,7 +880,7 @@ export default  {
         }
       ] ,
       "ubicaciones" : [ ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "ff24da26-a969-4f0e-ba1e-a122ead6c6e3" ,
@@ -996,7 +996,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "0440483e-ca0e-4120-8c50-4c8cd9b965d6" ,
@@ -1140,7 +1140,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "45204234-adfd-45cb-a505-a8e7a676b114" ,
@@ -1204,7 +1204,7 @@ export default  {
         }
       ] ,
       "ubicaciones" : [ ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "dc2e6bd1-8156-4886-adff-b39e6043af0c" ,
@@ -1351,7 +1351,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "90b72513-afd4-4570-84de-a56c312fdf81" ,
@@ -1482,7 +1482,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "cd3d059c-09f4-4ff3-8d63-bc765a5184fa" ,
@@ -1608,7 +1608,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [
+      "vehiculos" : [
         {
           "id" : "2354305f-dccd-4c44-a79e-cc60ba7376e6" ,
           "name" : "Castillo de Howl" ,
@@ -1727,7 +1727,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "758bf02e-3122-46e0-884e-67cf83df1786" ,
@@ -1864,7 +1864,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [
+      "vehiculos" : [
         {
           "id" : "923d70c9-8f15-4972-ad53-0128b261d628" ,
           "nombre" : "Barco de Sosuke" ,
@@ -1994,7 +1994,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "45db04e4-304a-4933-9823-33f389e8d74d" ,
@@ -2100,7 +2100,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "67405111-37a5-438f-81cc-4666af60c800" ,
@@ -2206,7 +2206,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [
+      "vehiculos" : [
         {
           "id" : "411f66ed0-771c-46d3-8f68-a3b65c6dd91c" ,
           "nombre" : "Mitsubishi 1MF9" ,
@@ -2325,7 +2325,7 @@ export default  {
           ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     } ,
     {
       "id" : "5fdfb320-2a02-49a7-94ff-5ca418cae602" ,
@@ -2449,7 +2449,7 @@ export default  {
           "residentes" : [ ]
         }
       ] ,
-      "vehículos" : [ ]
+      "vehiculos" : [ ]
     }
   ]
 }
