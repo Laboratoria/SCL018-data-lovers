@@ -5,15 +5,15 @@ import data from './data/ghibli/ghibli.js';
 const films = data.peliculas;
 const container = document.getElementById("allFirst");
 
-const img = (films) => {
+const img = (films, i) => {
   return `
     <div>
-        <img src= "${films.poster}" id="${films.id}" class= "orderPoster"/>
+        <img src= "${films.poster}" id="${i}" class= "orderPoster"/>
     </div>`;
 };
 
 for (let i = 0; i < films.length; i++) {
-  container.innerHTML += img(films[i]);
+  container.innerHTML += img(films[i],i);
 }
 
 const search = document.getElementById("filter");
@@ -62,7 +62,7 @@ order.addEventListener("change", (event) => {
       })
 
       container.innerHTML += img(yearFilter[i]);
-      console.log(yearFilter[i].release_date);
+      //console.log(yearFilter[i].release_date);
     }
   }
   //FILTRO TODAS
@@ -163,9 +163,17 @@ for (let i = 0; i < images.length; i++) {
   const element = images[i];
  // console.log(element);
   element.addEventListener("click", (e) =>{
-   console.log(e);
+    container.innerHTML = " ";
+    const currentId = e.target.getAttribute("id");
+   //console.log(e.target.getAttribute("id"));
+   printFilmData (currentId);
   })
 }
 
+const printFilmData = (id) => {
+  const newHtml = imgData(films[id]);
+  container.innerHTML += newHtml
+  //console.log(newHtml);
+}
 
 //console.log(images);
