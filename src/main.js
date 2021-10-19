@@ -155,27 +155,26 @@ const imgData = (films, person,i) => {
         </ul>
     </div>
     </div>
-    <div> 
-    <img src= "${person}"  id="${i}"  class= "orderPoster"/>
+    <h2><strong> PERSONAJES: </strong></h2>
+    <div id="orderPerson"> 
+    ${films.gente.map((x)=>{
+      return `<img src= "${x.img}" class= "orderPerson"/>`;
+   })}
     </div>
-    <div> 
-    <img src= "${films.ubicaciones}" class= "orderPoster"/>
+    <h2><strong> UBICACIONES: </strong></h2>
+    <div id="orderLocation"> 
+    ${films.ubicaciones.map((x)=>{
+      return `<img src= "${x.img}" class= "orderLocation"/>`;
+   })}
     </div>
-    <div> 
-    <img src= "${films.vehiculos}" class= "orderPoster"/>
+    <h2><strong> VEHÍCULOS: </strong></h2>
+    <div id="orderCars"> 
+    ${films.vehiculos.map((x)=>{
+      return `<img src= "${x.poster}" class= "orderCars"/>`;
+   })}
     </div>
     `;
 };
-
-//deje una función de newPerson para que no se pegue junto con el contenido inicial el recorrido de person, si no
-//que se muestre una vez que se llame en el imgData
-//const newPerson = () => {
-  const person = films.filter(x => (x.gente);
-for (let i = 0; i < person.length; i++) {
-  container.innerHTML += imgData(person[i]);
-  console.log(person[i].gente);
-//}
-}
 
 
 const images = document.getElementsByClassName("orderPoster");

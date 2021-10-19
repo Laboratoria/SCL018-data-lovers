@@ -150,6 +150,7 @@ footer img{
     line-height: 1.5;
     border-radius: 10px;
     margin-right: 30px;
+    /*color: #ffff;*/
 
 }
 
@@ -164,6 +165,59 @@ footer img{
 .orderInfo{
     display: flex;
     flex-direction: row;
+}
+
+h2{
+    padding-top: 20px;
+    color: #ffff;
+}
+
+.orderPerson{
+    border-radius: 30px;
+    width:140px;
+    height: 223px;
+    padding: 20px;
+    filter: drop-shadow(8px 8px 8px black)
+}
+
+#orderPerson{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding: 23px;
+}
+
+.orderLocation{
+    border-radius: 30px;
+    width:140px;
+    height: 223px;
+    padding: 20px;
+    filter: drop-shadow(8px 8px 8px black)
+ }
+
+#orderLocation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding: 23px;
+}
+
+.orderCars{
+    border-radius: 30px;
+    width:140px;
+    height: 223px;
+    padding: 20px;
+    filter: drop-shadow(8px 8px 8px black)
+}
+
+#orderCars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding: 23px;
 }
 
 @media screen and (max-width: 850px) {
