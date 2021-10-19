@@ -196,6 +196,21 @@ const printFilmData = (id) => {
   //console.log(newHtml);
 }
 
-
-
-//console.log(images);
+//FILTRO TOP 10
+const imgTop = (films) => {
+  return `
+    <div>
+        <img src= "${films.poster}" class= "orderPoster"/>
+    </div>`;
+};
+const top = document.getElementById("topTen");
+top.addEventListener("click", () => {
+  const score = films.filter(x => (x.rt_score));
+  for (let i = 0; i < score.length; i++) {
+    if (score >= "92") {
+      /*top.innerHTML = " ";  */
+      top.innerHTML = imgTop(score[i]);
+  }
+    //console.log(yearFilter[i].release_date);
+  }
+});

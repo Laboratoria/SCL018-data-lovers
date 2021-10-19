@@ -73,7 +73,7 @@ main{
     flex-direction: row;
     padding-top: 30px;
 }
-#allFirst{
+#topTen{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
