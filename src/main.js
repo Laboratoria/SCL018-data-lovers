@@ -138,17 +138,17 @@ director.addEventListener("change", (event) => {
 
 //PAGINAS DE DATOS
 
-const imgData = (films) => {
+const imgData = (films, person,i) => {
   return `
     <div class= "orderInfo">
     <div>
-        <img src= "${films.poster}" class= "orderPoster"/>
+        <img src= "${films.poster}" id= "orderPoster" class= "orderPoster"/>
     </div>
     <div class= "info"> 
         <ul class= "list">
         <li> <strong> Película: </strong> "${films.title}"</li>
         <li> <strong> Año: </strong> "${films.release_date}"</li>
-        <li> <strong> Productor: </strong> "${films.producer}"</li>
+        <li> <strong> Productor: </strong> "${films.productor}"</li>
         <li> <strong> Director: </strong> "${films.director}"</li>
         <li> <strong> Puntaje: </strong> "${films.rt_score}"</li>
         <li> <strong> Reseña: </strong> "${films.description}"</li>
@@ -156,7 +156,7 @@ const imgData = (films) => {
     </div>
     </div>
     <div> 
-    <img src= "${films.gente}" class= "orderPoster"/>
+    <img src= "${person}"  id="${i}"  class= "orderPoster"/>
     </div>
     <div> 
     <img src= "${films.ubicaciones}" class= "orderPoster"/>
@@ -167,22 +167,18 @@ const imgData = (films) => {
     `;
 };
 
-/*const person = films.gente;
+//deje una función de newPerson para que no se pegue junto con el contenido inicial el recorrido de person, si no
+//que se muestre una vez que se llame en el imgData
+//const newPerson = () => {
+  const person = films.filter(x => (x.gente);
 for (let i = 0; i < person.length; i++) {
   container.innerHTML += imgData(person[i]);
-  console.log(person);
-}*/
-
-
+  console.log(person[i].gente);
+//}
+}
 
 
 const images = document.getElementsByClassName("orderPoster");
-/*img.addEventListener("click", () => {
-  container.innerHTML = " ";
-  //const clickPoster = films.filter(x => (x.poster)); 
-for (let i = 0; i < films.length; i++) {
-  container.innerHTML += imgData(films[i]);
-}});*/
 
 for (let i = 0; i < images.length; i++) {
   const element = images[i];
@@ -200,5 +196,7 @@ const printFilmData = (id) => {
   container.innerHTML += newHtml
   //console.log(newHtml);
 }
+
+
 
 //console.log(images);
