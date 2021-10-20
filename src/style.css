@@ -188,6 +188,26 @@ h2{
     padding: 23px;
 }
 
+#orderFront{
+    border-radius: 30px;
+    width:140px;
+    height: 223px;
+    padding: 20px;
+    filter: drop-shadow(8px 8px 8px black)
+
+
+}
+
+#orderBack{
+    border-radius: 30px;
+    width:140px;
+    height: 223px;
+    padding: 20px;
+    filter: drop-shadow(8px 8px 8px black);
+    background-color: blue;
+
+}
+
 .orderLocation{
     border-radius: 30px;
     width:140px;
