@@ -55,15 +55,15 @@ order.addEventListener("change", (event) => {
   //FILTRO AÑO
   if (option === "Año") {
     container.innerHTML = " ";
-    const yearFilter = films.filter(x => (x.release_date));
+    //const yearFilter = films.filter(x => (x.release_date));
     
-    for (let i = 0; i < yearFilter.length; i++) {
-      yearFilter.sort((a, b) => {
-        return a.release_date - b.release_date
-      })
-
-      container.innerHTML += img(yearFilter[i]);
-      //console.log(yearFilter[i].release_date);
+    films.sort((a, b) => {
+      return a.release_date - b.release_date
+    })
+    for (let i = 0; i < films.length; i++) {
+      
+      container.innerHTML += img(films[i]);
+      console.log(films[i].release_date);
     }
   }
 
@@ -155,27 +155,25 @@ const imgData = (films, person,i) => {
         </ul>
     </div>
     </div>
-    <h2><strong> PERSONAJES: </strong></h2>
-    <div id="orderPerson"> 
-    ${films.gente.map((x)=>{
-      return `<img src= "${x.img}" class= "orderPerson"/>`;
-   })}
+    <h2><strong> PERSONAJES: </strong></h2> 
+    <div id="orderPerson">
+    <div id="orderFront"> 
+    ${films.gente.map((x)=> `<img src= "${x.img}" class= "orderPerson"/>`)};
     </div>
+    <div id="orderBack"> 
+    </div>
+    </div>
+
     <h2><strong> UBICACIONES: </strong></h2>
     <div id="orderLocation"> 
-    ${films.ubicaciones.map((x)=>{
-      return `<img src= "${x.img}" class= "orderLocation"/>`;
-   })}
+    ${films.ubicaciones.map((x)=> `<img src= "${x.img}" class= "orderLocation"/>`)};
     </div>
     <h2><strong> VEHÍCULOS: </strong></h2>
     <div id="orderCars"> 
-    ${films.vehiculos.map((x)=>{
-      return `<img src= "${x.poster}" class= "orderCars"/>`;
-   })}
+    ${films.vehiculos.map((x)=> `<img src= "${x.poster}" class= "orderCars"/>`)};
     </div>
     `;
 };
-
 
 const images = document.getElementsByClassName("orderPoster");
 
@@ -197,20 +195,17 @@ const printFilmData = (id) => {
 }
 
 //FILTRO TOP 10
-const imgTop = (films) => {
-  return `
-    <div>
-        <img src= "${films.poster}" class= "orderPoster"/>
-    </div>`;
-};
-const top = document.getElementById("topTen");
-top.addEventListener("click", () => {
-  const score = films.filter(x => (x.rt_score));
-  for (let i = 0; i < score.length; i++) {
-    if (score >= "92") {
-      /*top.innerHTML = " ";  */
-      top.innerHTML = imgTop(score[i]);
-  }
-    //console.log(yearFilter[i].release_date);
+
+const ct= document.getElementById("clickTop");
+ct.addEventListener("click", () => {
+  container.innerHTML = " "; 
+
+  films.sort((b, a) => {
+    return a.rt_score - b.rt_score
+  })
+  for (let i = 0; i < 10; i++) {
+    
+    container.innerHTML += img(films[i]);
+    console.log(films[i].rt_score);
   }
 });
