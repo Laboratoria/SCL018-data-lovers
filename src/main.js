@@ -138,7 +138,7 @@ director.addEventListener("change", (event) => {
 
 //PAGINAS DE DATOS
 
-const imgData = (films, person,i) => {
+const imgData = (films) => {
   return `
     <div class= "orderInfo">
     <div>
@@ -156,11 +156,8 @@ const imgData = (films, person,i) => {
     </div>
     </div>
     <h2><strong> PERSONAJES: </strong></h2> 
-    <div id="orderPerson">
-    <div id="orderFront"> 
+    <div>
     ${films.gente.map((x)=> `<img src= "${x.img}" class= "orderPerson"/>`)};
-    </div>
-    <div id="orderBack"> 
     </div>
     </div>
 
