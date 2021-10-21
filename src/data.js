@@ -16,3 +16,22 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
     return sortedCharacters;
     }
+
+
+
+//filtrar especie
+export const filterDataSpecies = (data, species) => {
+    const filteRickAndMorty = data.results;
+
+    const filterSpecie = filteRickAndMorty.filter(especie => especie.species === species);
+    return filterSpecie;
+  }
+
+
+//filtrar estatus
+export const filterDataStatus = (data, status) => {
+    const filteRickAndMorty = data.results;
+
+    const filterStatus = filteRickAndMorty.filter(estado => estado.status === status);
+    return filterStatus;
+  }

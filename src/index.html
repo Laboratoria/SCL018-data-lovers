@@ -39,11 +39,11 @@
             </aside>
         </main>
         <!--FOOTER CON AUDIO-->
-        <footer class="audioRickAndMorty">
+        <!-- <footer class="audioRickAndMorty">
             <audio autoplay="autoplay" loop="" controls="">
                 <source src="audio/rick_and_morty_intro.mp3" type="audio/mpeg">
             </audio>
-        </footer>
+        </footer> -->
 
     </section>
 
@@ -57,7 +57,7 @@
         <nav>
         <!--BOTÓN VOLVER-->
             <button name="volver" type="button" title="Volver" id="buttonBack" class="btnBackToFirstPage btnsSecondPage">
-                <p class="btnTextBackToFirstPage">Volver</p>
+                <p class="btnTextBackToFirstPage">VOLVER</p>
             </button>
         <!--BOTÓN BÚSQUEDA-->
  <!--       <section class="searcher">
@@ -67,7 +67,7 @@
         <!--BOTÓN SORTBY-->
             <section class="sortBy">
                 <select id="sort" class="orderedBox btnsSecondPage">
-                    <option value="sort-by" selected hidden>Ordenar</option>
+                    <option value="sort-by" selected hidden>ORDENAR</option>
                     <option value="name" id="ascendent-name">A-Z</option>
                     <option value="nameZA">Z-A</option>
                 </select>
@@ -79,7 +79,45 @@
             <!--CARDS-->
             <div id="root"></div>
             <!--ASIDE CON FILTROS--> 
-        <aside></aside>
+        <aside>
+        
+        <h1 class="filterAside">FILTROS</h1>
+            
+        <!--BOTÓN ESPECIE-->
+            <section class="Especie">
+                <select id="filterSpecies" class="filterBoxSpecies">
+                    <option value="Filter-Sp" selected hidden>ESPECIES</option>
+                    <option value="Human">HUMANOS</option>
+                     <option value="Humanoid">HUMANOIDES</option>
+                    <option value="Alien">ALIENS</option>
+                   <option value="Vampire">VAMPIROS</option>
+                    <option value="Mytholog">MITOLOGICOS</option>
+                    <option value="Disease">ENFERMEDADES</option>
+                    <option value="Poopybutthole">POOPYBUTTHOLES</option>
+                    <option value="Animal">ANIMALES</option>
+                    <option value="Robot">ROBOTS</option>
+                    <option value="Parasite">PARASITOS</option>
+                     <option value="unknown">ESPECIE DESCONOCIDA</option>
+                    <option value="Cronenberg">CRONENBERG</option>  
+                  </select>
+                </select>
+            </section>
+
+            <!--BOTÓN ESTATUS-->
+            <section class="Estatus">
+                <select id="filterStatus" class="filterBoxStatus">
+                    <option value="Filter-St" selected hidden>ESTATUS</option>
+                    <option value="unknown">Desconocido</option>
+                     <option value="Dead">Muerto</option> 
+                     <option value="Alive">Vivo</option>
+                  </select>
+                </select>
+            </section>
+
+            <!--BOTÓN LIMPIAR-->
+            <button>LIMPIAR</button>
+
+        </aside>
         </main> 
     </section>
 

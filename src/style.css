@@ -100,39 +100,13 @@ margin-top: 4rem;
 } 
 
 nav{
-    background-color: red;
+    background-color: black;
     height: 20vh;
 }
 
 .secondImageSecondPage {
     background-image: url("images/Fondo2.png");
     background-size: cover; /*Repeat*/
-}
-
-.card{
-    display: inline-block;
-    height: 50vh;
-    width: 20vw;
-    background-image: url("images/Portal.jpg");
-    background-size: cover;
-    margin: 1rem;
-}
-
-.cardImage{
-    height: 25vh;
-    width: auto;
-    margin: auto;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.cardText{
-    font-family: Audiowide, Arial, Helvetica, sans-serif;
-    color: #000000;
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: 1rem;
 }
 
 /*    .searcherImage{
@@ -161,7 +135,7 @@ nav{
     font-size:12.9px;
 }  */
 
-/* 
+/*
 input[type="search"]{
     width:170px;
     margin:10px;
@@ -176,3 +150,77 @@ input[type="search"]:focus{
     background:#fff;
     width:300px;
 } */
+
+/*FLIPCARDS*/
+
+    #root{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .tarjeta-wrap{
+    margin: 10px;
+    perspective: 800;
+} */
+
+.tarjeta{
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: .7s ease;
+}
+
+.frontCard, .backCard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.backCard{
+    transform: rotateY(180deg);
+    background-color: rgba(252, 244, 244, 0.5);
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg)
+}
+
+.card{
+    height: 50vh;
+    width: 20vw; 
+    background-image: url("images/Portal.jpg");
+    background-size: cover;
+    margin: 1rem;
+}
+
+.cardImage{
+    height: 25vh;
+    width: auto;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardTextName{
+    font-family: Audiowide, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+} 
+
+.cardText{
+    font-family: Audiowide, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1.5rem;
+} 
+
+.filterAside{
+    background-color: yellow;
+    color: #00ACB3;
+}
