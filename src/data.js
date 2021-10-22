@@ -18,20 +18,28 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
 
 
-
 //filtrar especie
-export const filterDataSpecies = (data, species) => {
-    const filteRickAndMorty = data.results;
+export const filterDataSpecies = (results, species) => {
+    //const filteRickAndMorty = data.results;
 
-    const filterSpecie = filteRickAndMorty.filter(especie => especie.species === species);
+    const filterSpecie = results.filter(especie => especie.species === species);
     return filterSpecie;
   }
 
 
 //filtrar estatus
-export const filterDataStatus = (data, status) => {
-    const filteRickAndMorty = data.results;
+export const filterDataStatus = (results, status) => {
+    //const filteRickAndMorty = data.results;
 
-    const filterStatus = filteRickAndMorty.filter(estado => estado.status === status);
+    const filterStatus = results.filter(estado => estado.status === status);
     return filterStatus;
   }
+
+
+
+//LIMPIAR
+/* const limpiar = () => {
+    for (let i = $select.option.length; i >= 0; i--) {
+      $select.remove(i);
+    }
+  }; */

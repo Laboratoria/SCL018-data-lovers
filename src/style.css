@@ -155,8 +155,9 @@ input[type="search"]:focus{
 
     #root{
     display: flex;
-    justify-content: space-around;
+/*     justify-content: space-around; */
     flex-wrap: wrap;
+/*     justify-content: flex-start; */
 }
 
 /* .tarjeta-wrap{
@@ -220,7 +221,23 @@ input[type="search"]:focus{
     margin-top: 1.5rem;
 } 
 
-.filterAside{
-    background-color: yellow;
+.filters{
+    background-color: #30B61D;
     color: #00ACB3;
+}
+
+.cardsAndFilters{
+    display: flex;
+/*     justify-content: space-around; */
+}
+
+/* aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: flex-end;
+} */
+
+.filtersAside{
+    border: 0.5rem #30B61D solid;
 }
