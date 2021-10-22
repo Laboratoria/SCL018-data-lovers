@@ -1,4 +1,4 @@
-import { example } from './data.js';
+import { searchFilter, filterOne, filterTwo, filterTopTen } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/ghibli/ghibli.js';
 
@@ -20,7 +20,7 @@ const search = document.getElementById("filter");
 
 //FILTRO DE BUSQUEDA
 search.addEventListener("keydown", (key) => {
-  if (key.key === "Enter") {
+  /*if (key.key === "Enter") {
     const text = search.value.toLowerCase();
     const titleFilter = films.filter(x => (x.title.toLowerCase()).includes(text));
 
@@ -32,14 +32,16 @@ search.addEventListener("keydown", (key) => {
     } else {
       alert("Película no encontrada");
     }
-  }
+  }*/
+  searchFilter(search, films, container, img, key);
 });
 
 //FILTRO ALFABETICO
 const order = document.getElementById("order");
 order.addEventListener("change", (event) => {
   const option = event.target.value;
-  if (option === "Alfabetico") {
+  filterOne(option, container, films, img);
+  /*if (option === "Alfabetico") {
     container.innerHTML = " ";
     const titleFilter = films.filter(x => (x.title.toLowerCase()));
 
@@ -50,10 +52,10 @@ order.addEventListener("change", (event) => {
       container.innerHTML += img(titleFilter[i]);
       //console.log(titleFilter[i].title);
     }
-  }
+  }*/
 
   //FILTRO AÑO
-  if (option === "Año") {
+  /*if (option === "Año") {
     container.innerHTML = " ";
     //const yearFilter = films.filter(x => (x.release_date));
     
@@ -65,75 +67,22 @@ order.addEventListener("change", (event) => {
       container.innerHTML += img(films[i]);
       console.log(films[i].release_date);
     }
-  }
+  }*/
 
   //FILTRO TODAS
-  if (option === "Todas") {
+  /*if (option === "Todas") {
     container.innerHTML = " ";
     for (let i = 0; i < films.length; i++) {
       container.innerHTML += img(films[i]);
     }
-  }
+  }*/
 });
 
 //FILTRO POR DIRECTOR
 const director = document.getElementById("director");
 director.addEventListener("change", (event) => {
   const directorOption = event.target.value;
-  if (directorOption === "todas") {
-    container.innerHTML = " ";
-    for (let i = 0; i < films.length; i++) {
-      container.innerHTML += img(films[i]);
-    }}
-    if (directorOption === "Hayao") {
-      container.innerHTML = " ";
-      const hayaoFilter = films.filter(x => (x.director === "Hayao Miyazaki"));
-      for (let i = 0; i < hayaoFilter.length; i++) {
-        container.innerHTML += img(hayaoFilter[i]);
-        //console.log(hayaoFilter[i].director);  
-      }
-    }
-    if (directorOption === "Isao") {
-      container.innerHTML = " ";
-      const isaoFilter = films.filter(x => (x.director === "Isao Takahata"));
-      for (let i = 0; i < isaoFilter.length; i++) {
-        container.innerHTML += img(isaoFilter[i]);
-        //console.log(isaoFilter[i].director); 
-      }
-    }
-    if (directorOption === "Gorō") {
-      container.innerHTML = " ";
-      const goroFilter = films.filter(x => (x.director === "Gorō Miyazaki"));
-      for (let i = 0; i < goroFilter.length; i++) {
-        container.innerHTML += img(goroFilter[i]);
-        //console.log(goroFilter[i].director);
-        
-      }
-    }
-    if (directorOption === "Hiroyuki") {
-      container.innerHTML = " ";
-      const hiroyukiFilter = films.filter(x => (x.director === "Hiroyuki Morita"));
-      for (let i = 0; i < hiroyukiFilter.length; i++) {
-        container.innerHTML += img(hiroyukiFilter[i]);
-        //console.log(hiroyukiFilter[i].director);  
-      }
-    }
-    if (directorOption === "Hiromasa") {
-      container.innerHTML = " ";
-      const hiromasaFilter = films.filter(x => (x.director === "Hiromasa Yonebayashi"));
-      for (let i = 0; i < hiromasaFilter.length; i++) {
-        container.innerHTML += img(hiromasaFilter[i]);
-        //console.log(hiromasaFilter[i].director);  
-      }
-    }
-    if (directorOption === "Yoshifumi") {
-      container.innerHTML = " ";
-      const yoshifumiFilter = films.filter(x => (x.director === "Yoshifumi Kondō"));
-      for (let i = 0; i < yoshifumiFilter.length; i++) {
-        container.innerHTML += img(yoshifumiFilter[i]);
-        //console.log(yoshifumiFilter[i].director); 
-      }
-    }
+  filterTwo(directorOption, container, films, img);
 });
 
 //PAGINAS DE DATOS
@@ -195,7 +144,8 @@ const printFilmData = (id) => {
 
 const ct= document.getElementById("clickTop");
 ct.addEventListener("click", () => {
-  container.innerHTML = " "; 
+  filterTopTen(container, films, img)
+  /*container.innerHTML = " "; 
 
   films.sort((b, a) => {
     return a.rt_score - b.rt_score
@@ -204,5 +154,5 @@ ct.addEventListener("click", () => {
     
     container.innerHTML += img(films[i]);
     console.log(films[i].rt_score);
-  }
+  }*/
 });
