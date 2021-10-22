@@ -46,8 +46,7 @@ export const filterOne = (option, container, films, img) => {
     films.sort((a, b) => {
       return a.release_date - b.release_date
     })
-    for (let i = 0; i < films.length; i++) {
-      
+    for (let i = 0; i < films.length; i++) { 
       container.innerHTML += img(films[i]);
       //console.log(films[i].release_date);
     }
