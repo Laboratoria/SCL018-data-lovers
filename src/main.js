@@ -49,7 +49,7 @@ return `
 };
 
 /* for (let i=0; i < rickandmorty.length; i++) { */
-    for (let i=0; i < rickandmorty.length; i++) {
+    for (let i=0; i < 20; i++) {
 printCharacters.innerHTML += drawCard(rickandmorty[i]);
 }
 
@@ -100,22 +100,44 @@ filterStatus.addEventListener("change", (event) => {
     filter(status);
 });
 
+
+
+/* PROBANDO */
+
+//Botón LIMPIAR ESPECIES
+document.getElementById("buttonClean").addEventListener("click", () => {
+document.getElementById("filterSpecies").value = "Filter-Sp";
+});
+
+//Botón LIMPIAR ESTATUS
+document.getElementById("buttonClean").addEventListener("click", () => {
+    document.getElementById("filterStatus").value = "Filter-St";
+});
+
+
+
+/* bottonCleanReset.addEventListener("click", () => {
+        printCharacters.innerHTML = "";
+        const bottonToClean = () => {
+            for (let i=0; i < data.results.length; i++) {
+                printCharacters.innerHTML += drawCard(data.results[i]);
+            }
+        }
+        bottonToClean(data.results);
+    });  */
+
+
 //boton limpiar funcional(no limpia los selct)
 /* const buttonCleanReset = document.getElementById("buttonClean");
-
 buttonCleanReset.addEventListener("click", () => {
     printCharacters.innerHTML = "";
     function clean() {
-
         for (let i = 0; i < data.results.length; i++) {
             printCharacters.innerHTML += drawCard(data.results[i]);
         }
     }
     clean(data.results);
-
 });
 buttonCleanReset.addEventListener("click", () =>{
     
 }) */
-
-

@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-   /*  cursor: url("images/Pistola2.png"), auto; */
+/*     cursor: url("images/Pistola2.png"), auto; */
 } 
 
 /* @ encapsulan un grupo de reglas */
@@ -100,13 +100,19 @@ margin-top: 4rem;
 } 
 
 nav{
-    background-color: black;
+    background-image: url("images/Fondo2.png");
+    background-size: Repeat;
     height: 20vh;
+    display: flex;
+    align-content: center;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around; 
 }
 
 .secondImageSecondPage {
     background-image: url("images/Fondo2.png");
-    background-size: cover; /*Repeat*/
+    background-size: Repeat;
 }
 
 /*    .searcherImage{
@@ -114,18 +120,12 @@ nav{
         width: 20px;
     }*/
 
-nav{
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
-}
-
-.btnsSecondPage{
+/*.btnsSecondPage{
     background-color: rgba(252, 244, 244, 0.5);
     padding: 0.8rem;
     border-radius: 100rem;
     margin: 1rem; 
-}
+} */
 
 /*  .searcher{
     height:100%;
@@ -157,6 +157,7 @@ input[type="search"]:focus{
     display: flex;
 /*     justify-content: space-around; */
     flex-wrap: wrap;
+    width: 70vw;
 /*     justify-content: flex-start; */
 }
 
@@ -245,8 +246,67 @@ margin-top: 1rem;
     align-content: center;
     position: sticky;
     top: 0rem;
+    margin-left: 2rem;
 }
 
 .filterBtns{
     margin: 2rem;
+}
+
+
+/* COLOR BOTONES */
+
+select {
+    color:#00ACB3;
+    -webkit-text-stroke: 0.0005rem black;
+    padding:0.5rem;
+    font-family: Architects Daughter, Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    font-weight:bold;
+    text-align:center;
+    -webkit-appearance: none; 
+    border-radius: 1rem;
+  }
+  
+  #sort {
+    background-color:#C0BFBF;
+  }
+  
+  /* #sort:hover {
+    background-color:rgba(255, 244, 244, 0.5);
+  } */
+  
+  #filterSpecies {
+    background-color: #C0BFBF;
+  }
+  
+  /* #filterSpecies:hover {
+    background-color:rgba(255, 244, 244, 0.5);
+  } */
+  
+  #filterStatus {
+    background-color: #C0BFBF;
+  }
+  
+  /* #filterStatus:hover {
+    background-color:rgba(255, 244, 244, 0.5);
+  } */
+  
+  select:focus, select:active {
+    border:0;
+    outline:0;
+  }
+
+#buttonBack{
+    color:#00ACB3;
+-webkit-text-stroke: 0.0005rem black;
+padding:0.5rem;
+font-family: Architects Daughter, Arial, Helvetica, sans-serif;
+font-size:1rem;
+font-weight:bold;
+text-align:center;
+-webkit-appearance: none; 
+border-radius: 1rem;
+background-color: #C0BFBF;
+height: 2.5rem;
 }
