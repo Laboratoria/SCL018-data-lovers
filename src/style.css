@@ -223,7 +223,8 @@ input[type="search"]:focus{
 
 .filters{
     background-color: #30B61D;
-    color: #00ACB3;
+    color: black;
+    text-align: center;
 }
 
 .cardsAndFilters{
@@ -231,13 +232,21 @@ input[type="search"]:focus{
 /*     justify-content: space-around; */
 }
 
-/* aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-content: flex-end;
-} */
+aside{
+margin-right: 4rem;
+margin-top: 1rem;
+}
 
 .filtersAside{
-    border: 0.5rem #30B61D solid;
+    border: 0.8rem #30B61D solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: sticky;
+    top: 0rem;
+}
+
+.filterBtns{
+    margin: 2rem;
 }

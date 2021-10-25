@@ -1,7 +1,7 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import {sortData, filterDataSpecies, filterDataStatus} from './data.js';
+import {sortData} from './data.js';
 
-//console.log(sortData, data);
+console.log(sortData, data);
 
 // Averiguar porqué no es una función pura
 const sortBy = "name";
@@ -22,6 +22,16 @@ document.getElementById("buttonBack").addEventListener("click", () => {
     firstPage.style.display = "block";
 });
 
+// Evento onclick para redireccionar a páginas
+/* document.getElementById('buttonTrailer').onclick = () => {
+    location.href = "https://www.youtube.com/watch?v=E8cXKMR9a1Q&ab_channel=JoyasDeLaAnimaci%C3%B3n"
+    }
+
+document.getElementById('buttonSynopsis').onclick = () => {
+    location.href = "https://www.sensacine.com/series/serie-11561/"
+    }
+ */
+
 // Llamar personajes
 // <li>Episodio: ${rickandmorty.episode}</li>
 
@@ -29,76 +39,34 @@ const rickandmorty = data.results;
 const printCharacters = document.getElementById("root");
 
 const drawCard = (rickandmorty) => {
-return `  
-<section class="tarjeta-wrap">
-<section class="card tarjeta">
-<section class="frontCard">
+return `
+<section class="card">
 <img src="${rickandmorty.image}" alt="imagen del personaje" class="cardImage">
-<p class="cardTextName">${rickandmorty.name}</p>
-</section>
-<section class="backCard">
 <ul>
-<p class="cardText">Estatus: ${rickandmorty.status}</p>
+<p class="cardText">${rickandmorty.name}</p>
 <p class="cardText">Especie: ${rickandmorty.species}</p>
-<p class="cardText">Tipo: ${rickandmorty.type}</p>
-<p class="cardText">Genero: ${rickandmorty.gender}</p>
-<p class="cardText">Origen: ${rickandmorty.origin.name}
-<p class="cardText">Ubicación: ${rickandmorty.location.name}
+<p class="cardText">Estatus: ${rickandmorty.status}</p>
 </ul>
-</section>
-</section>
 </section>`;
 };
 
-/*    for (let i=0; i < 20; i++) {*/
- for (let i=0; i < rickandmorty.length; i++) { 
+/* for (let i=0; i < rickandmorty.length; i++) { */
+    for (let i=0; i < 20; i++) {
 printCharacters.innerHTML += drawCard(rickandmorty[i]);
-}
+};
 
 
-// SortBy
+// SortBy 
+
 const orderOption = document.querySelector(".orderedBox");
 
 orderOption.addEventListener("change", (event) => {
     const chosenOrder = sortData(data, sortBy, event.target.value);
-    const print = () => {
+    const print = (results) => {
         printCharacters.innerHTML = "";
-        for (let i=0; i < rickandmorty.length; i++) {
+        for (let i=0; i < 20; i++) {
             printCharacters.innerHTML += drawCard(rickandmorty[i]);
-            }
+            };
     }
     print(chosenOrder);
-});
-
-
-// Filtro ESPECIE
-const filterSpecie = document.querySelector(".filterBoxSpecies");
-//Registramos el evento change
-filterSpecie.addEventListener("change", (event) => {
-//Event.target obtiene el elemento donde ocurrió el evento
-   const species = filterDataSpecies(data.results, event.target.value);
-   printCharacters.innerHTML = "";  
-   
-    const filter = () => {
-       
-        for (let i=0; i < species.length; i++) {
-            printCharacters.innerHTML += drawCard(species[i]);
-            }
-    }
-    filter(species);
-});
-
-// Filtro ESTATUS
-const filterStatus = document.querySelector(".filterBoxStatus");
-filterStatus.addEventListener("change", (event) => {
-   const status = filterDataStatus(data.results, event.target.value);
-   printCharacters.innerHTML = "";  
-   
-    const filter = () => {
-       
-        for (let i=0; i < status.length; i++) {
-            printCharacters.innerHTML += drawCard(status[i]);
-            }
-    }
-    filter(status);
 });

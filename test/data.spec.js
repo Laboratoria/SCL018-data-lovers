@@ -44,9 +44,6 @@ describe('sortData', () => {
 
 
 
-
-
-
 describe('filterDataSpecies', () => {
   it('is a function', () => {
     expect(typeof filterDataSpecies).toBe('function');
