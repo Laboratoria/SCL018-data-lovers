@@ -6,13 +6,15 @@ describe('sortData', () => {
   });
 
   it('should order the result from A to Z', () => {
-    const data = [
+    const data = {
+      results:[
       {name: 'Rick Sanchez'},
       {name: 'Morty Smith'},
       {name: 'Summer Smith'},
       {name: 'Beth Smith'},
       {name: 'Jerry Smith'},
-    ];
+    ]
+  };
     const result = [
       {name: 'Beth Smith'},
       {name: 'Jerry Smith'},
@@ -24,13 +26,15 @@ describe('sortData', () => {
   });
   
   it('should order the result from Z to A', () => {
-    const data = [
+    const data = {
+      results:[
       {name: 'Rick Sanchez'},
       {name: 'Morty Smith'},
       {name: 'Summer Smith'},
       {name: 'Beth Smith'},
       {name: 'Jerry Smith'},
-    ];
+    ]
+  };
     const result = [
       {name: 'Summer Smith'},
       {name: 'Rick Sanchez'},
