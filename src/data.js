@@ -1,11 +1,11 @@
 // estas funciones son de ejemplo
 
 //FILTRO DE BUSQUEDA
-export const searchFilter = (search, films, container, img, key) => {
+export const searchFilter = (search, films) => {
   if (key.key === "Enter") {
     const text = search.value.toLowerCase();
     const titleFilter = films.filter(x => (x.title.toLowerCase()).includes(text));
-
+    return titleFilter;
     if (titleFilter.length > 0) {
       container.innerHTML = " ";
       for (let i = 0; i < titleFilter.length; i++) {
@@ -16,6 +16,7 @@ export const searchFilter = (search, films, container, img, key) => {
     }
   }
 };
+
 
 export const filterOne = (option, container, films, img) => {
    //FILTRO TODOS
@@ -30,11 +31,11 @@ export const filterOne = (option, container, films, img) => {
     container.innerHTML = " ";
     const titleFilter = films.filter(x => (x.title.toLowerCase()));
 
-    for (let i = 0; i < titleFilter.length; i++) {
-      titleFilter.sort((t1, t2) => {
+    for (let i = 0; i < films.length; i++) {
+      films.sort((t1, t2) => {
         return (t1.title < t2.title) ? -1 : 1
       })
-      container.innerHTML += img(titleFilter[i]);
+      container.innerHTML += img(films[i]);
       //console.log(titleFilter[i].title);
     }
   }
