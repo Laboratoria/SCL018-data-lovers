@@ -105,13 +105,13 @@ filterStatus.addEventListener("change", (event) => {
 /* PROBANDO */
 
 //Botón LIMPIAR ESPECIES
-document.getElementById("buttonClean").addEventListener("click", () => {
+document.getElementById("bottonClean").addEventListener("click", () => {
 document.getElementById("filterSpecies").value = "Filter-Sp";
 });
 
 //Botón LIMPIAR ESTATUS
-document.getElementById("buttonClean").addEventListener("click", () => {
-    document.getElementById("filterStatus").value = "Filter-St";
+document.getElementById("bottonClean").addEventListener("click", () => {
+document.getElementById("filterStatus").value = "Filter-St";
 });
 
 
