@@ -2,19 +2,9 @@
 
 //FILTRO DE BUSQUEDA
 export const searchFilter = (search, films) => {
-  if (key.key === "Enter") {
-    const text = search.value.toLowerCase();
-    const titleFilter = films.filter(x => (x.title.toLowerCase()).includes(text));
+    const titleFilter = films.filter(x => (x.title.toLowerCase()).includes(search));
     return titleFilter;
-    if (titleFilter.length > 0) {
-      container.innerHTML = " ";
-      for (let i = 0; i < titleFilter.length; i++) {
-        container.innerHTML += img(titleFilter[i]);
-      }
-    } else {
-      alert("Película no encontrada");
-    }
-  }
+  
 };
 
 

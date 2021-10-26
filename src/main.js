@@ -20,9 +20,16 @@ const search = document.getElementById("filter");
 
 //FILTRO DE BUSQUEDA
 search.addEventListener("keydown", (key) => {
-  searchFilter(search, films, container, img, key);
-});
+  const text = search.value.toLowerCase();
+  if (key.key === "Enter") {
+    container.innerHTML = " ";
+  const prueba = searchFilter(text, films);
+  prueba.forEach(element => {
+    container.innerHTML += img(element);
+  })}
 
+});
+  
 //FILTRO ALFABETICO
 const order = document.getElementById("order");
 order.addEventListener("change", (event) => {
