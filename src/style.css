@@ -250,7 +250,7 @@ article {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   a {
     font-size: 20px;
     padding: 8px;
@@ -302,7 +302,7 @@ article {
     flex-direction: column;
   }
   .paragraph {
-    width: 550px;
+    width: 380px;
     height: auto;
     font-size: 16px;
   }
@@ -317,6 +317,28 @@ article {
     display: flex;
     align-items: center;
   }
+  .list {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .info {
+  
+  width: 700px;
+  height: 100%;
+  padding: 0;
+  margin-top: 20px;
+}
+#orderPoster {
+    padding:0;
+    width: 240px;
+    height: 323px;
+  }
+.boxPerson{
+    width: 800px;
+    margin: -30px;
+}
+  
 }
 
 @media screen and (max-width: 500px) {
@@ -332,6 +354,23 @@ article {
   nav img {
     width: 30%;
     height: 20%;
+  }
+  .paragraph {
+    width: 250px;
+    height: auto;
+    font-size: 16px;
+    margin:20px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  .srHayao {
+    width: 260px;
+    height: 400px;
+    display: flex;
+    align-items: center;
   }
 }
 
