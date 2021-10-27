@@ -146,7 +146,7 @@ const imgData = (films) => {
     </div>
     </div>
     <h2><strong> PERSONAJES: </strong></h2> 
-    <div>
+    <div class = "boxPerson">
     ${films.gente.map((x) => `<img src= "${x.img}" class= "orderPerson"/>`)};
     </div>
     </div>
