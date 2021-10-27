@@ -34,6 +34,7 @@ search.addEventListener("keydown", (key) => {
 const order = document.getElementById("order");
 order.addEventListener("change", (event) => {
   const option = event.target.value;
+  const test= filterOne (films);
   
 // FILTRO TODOS
    if (option === "Todas") {
@@ -44,25 +45,23 @@ order.addEventListener("change", (event) => {
   }
 //FILTRO AZ
 
-  if (option === "Alfabetico") {
-    container.innerHTML = " ";
-    for (let i = 0; i < films.length; i++) {
-      filterOne (films, img, option);
-      container.innerHTML += img(films[i]);
-      //console.log(films[i].title);
-    }
+if (option === "Alfabetico") {
+  container.innerHTML = " ";
+  for (let i = 0; i < test.sortAz.length; i++) {
+    container.innerHTML += img(test.sortAz[i]);
+    console.log(test.sortAz[i].title);
   }
-  //FILTRO DE AÑO
-  if (option === "Año") {
-    container.innerHTML = " ";
-    for (let i = 0; i < films.length; i++) {
-      filterOne (films, img, option); 
-      container.innerHTML += img(films[i]);
-      //console.log(films[i].release_date);
-    }
+}
+//FILTRO DE AÑO
+if (option === "Año") {
+  container.innerHTML = " ";
+  for (let i = 0; i < test.sortYear.length; i++) { 
+    container.innerHTML += img(test.sortYear[i]);
+    console.log(test.sortYear[i].release_date);
   }
-  //filterOne (films, img, option);
+}
 });
+
 
 //FILTRO POR DIRECTOR
 const director = document.getElementById("director");
