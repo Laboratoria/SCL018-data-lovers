@@ -45,22 +45,23 @@ order.addEventListener("change", (event) => {
   }
 //FILTRO AZ
 
-  if (option === "Alfabetico") {
-    container.innerHTML = " ";
-    for (let i = 0; i < test.sortAz.length; i++) {
-      container.innerHTML += img(test.sortAz[i]);
-      console.log(test.sortAz[i].title);
-    }
+if (option === "Alfabetico") {
+  container.innerHTML = " ";
+  for (let i = 0; i < test.sortAz.length; i++) {
+    container.innerHTML += img(test.sortAz[i]);
+    console.log(test.sortAz[i].title);
   }
-  //FILTRO DE AÑO
-  if (option === "Año") {
-    container.innerHTML = " ";
-    for (let i = 0; i < test.sortYear.length; i++) { 
-      container.innerHTML += img(test.sortYear[i]);
-      console.log(test.sortYear[i].release_date);
-    }
+}
+//FILTRO DE AÑO
+if (option === "Año") {
+  container.innerHTML = " ";
+  for (let i = 0; i < test.sortYear.length; i++) { 
+    container.innerHTML += img(test.sortYear[i]);
+    console.log(test.sortYear[i].release_date);
   }
+}
 });
+
 
 //FILTRO POR DIRECTOR
 const director = document.getElementById("director");
@@ -185,10 +186,11 @@ const pageTop= document.getElementById("clickTop");
 pageTop.addEventListener("click", () => {
   container.innerHTML = " "; 
   for (let i = 0; i < 10; i++) {
+    filterTopTen( films)
     container.innerHTML += img(films[i]);
-    //console.log(films[i].rt_score);
+    console.log(films[i].rt_score);
   }
-  filterTopTen( films)
+  
 });
 
 //PAGINA HISTORIA
