@@ -1,6 +1,5 @@
-import { searchFilter, filterOne, filterTopTen } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/ghibli/ghibli.js';
+import { searchFilter, filterOne, filterTopTen } from "./data.js";
+import data from "./data/ghibli/ghibli.js";
 
 const films = data.peliculas;
 const container = document.getElementById("allFirst");
@@ -13,7 +12,7 @@ const img = (films, i) => {
 };
 
 for (let i = 0; i < films.length; i++) {
-  container.innerHTML += img(films[i],i);
+  container.innerHTML += img(films[i], i);
 }
 
 const search = document.getElementById("filter");
@@ -23,106 +22,110 @@ search.addEventListener("keydown", (key) => {
   const text = search.value.toLowerCase();
   if (key.key === "Enter") {
     container.innerHTML = " ";
-  const prueba = searchFilter(text, films);
-  prueba.forEach(element => {
-    container.innerHTML += img(element);
-  })}
-
+    const prueba = searchFilter(text, films);
+    prueba.forEach((element) => {
+      container.innerHTML += img(element);
+    });
+  }
 });
-  
+
 //FILTRO ALFABETICO
 const order = document.getElementById("order");
 order.addEventListener("change", (event) => {
   const option = event.target.value;
-  const test= filterOne (films);
-  
-// FILTRO TODOS
-   if (option === "Todas") {
+  const test = filterOne(films);
+
+  // FILTRO TODOS
+  if (option === "Todas") {
     container.innerHTML = " ";
     for (let i = 0; i < films.length; i++) {
       container.innerHTML += img(films[i]);
     }
   }
-//FILTRO AZ
+  //FILTRO AZ
 
-if (option === "Alfabetico") {
-  container.innerHTML = " ";
-  for (let i = 0; i < test.sortAz.length; i++) {
-    container.innerHTML += img(test.sortAz[i]);
-    console.log(test.sortAz[i].title);
+  if (option === "Alfabetico") {
+    container.innerHTML = " ";
+    for (let i = 0; i < test.sortAz.length; i++) {
+      container.innerHTML += img(test.sortAz[i]);
+      //console.log(test.sortAz[i].title);
+    }
   }
-}
-//FILTRO DE AÑO
-if (option === "Año") {
-  container.innerHTML = " ";
-  for (let i = 0; i < test.sortYear.length; i++) { 
-    container.innerHTML += img(test.sortYear[i]);
-    console.log(test.sortYear[i].release_date);
+  //FILTRO DE AÑO
+  if (option === "Año") {
+    container.innerHTML = " ";
+    for (let i = 0; i < test.sortYear.length; i++) {
+      container.innerHTML += img(test.sortYear[i]);
+      //console.log(test.sortYear[i].release_date);
+    }
   }
-}
 });
-
 
 //FILTRO POR DIRECTOR
 const director = document.getElementById("director");
 director.addEventListener("change", (event) => {
   const directorOption = event.target.value;
-//FILTRO DIRECTOR
   if (directorOption === "todas") {
     container.innerHTML = " ";
     for (let i = 0; i < films.length; i++) {
       container.innerHTML += img(films[i]);
-    }}
-    if (directorOption === "Hayao") {
-      container.innerHTML = " ";
-      const hayaoFilter = films.filter(x => (x.director === "Hayao Miyazaki"));
-      for (let i = 0; i < hayaoFilter.length; i++) {
-        container.innerHTML += img(hayaoFilter[i]);
-        //console.log(hayaoFilter[i].director);  
-      }
     }
-    if (directorOption === "Isao") {
-      container.innerHTML = " ";
-      const isaoFilter = films.filter(x => (x.director === "Isao Takahata"));
-      for (let i = 0; i < isaoFilter.length; i++) {
-        container.innerHTML += img(isaoFilter[i]);
-        //console.log(isaoFilter[i].director); 
-      }
+  }
+  if (directorOption === "Hayao") {
+    container.innerHTML = " ";
+    const hayaoFilter = films.filter((x) => x.director === "Hayao Miyazaki");
+    for (let i = 0; i < hayaoFilter.length; i++) {
+      container.innerHTML += img(hayaoFilter[i]);
+      //console.log(hayaoFilter[i].director);
     }
-    if (directorOption === "Gorō") {
-      container.innerHTML = " ";
-      const goroFilter = films.filter(x => (x.director === "Gorō Miyazaki"));
-      for (let i = 0; i < goroFilter.length; i++) {
-        container.innerHTML += img(goroFilter[i]);
-        //console.log(goroFilter[i].director);
-        
-      }
+  }
+  if (directorOption === "Isao") {
+    container.innerHTML = " ";
+    const isaoFilter = films.filter((x) => x.director === "Isao Takahata");
+    for (let i = 0; i < isaoFilter.length; i++) {
+      container.innerHTML += img(isaoFilter[i]);
+      //console.log(isaoFilter[i].director);
     }
-    if (directorOption === "Hiroyuki") {
-      container.innerHTML = " ";
-      const hiroyukiFilter = films.filter(x => (x.director === "Hiroyuki Morita"));
-      for (let i = 0; i < hiroyukiFilter.length; i++) {
-        container.innerHTML += img(hiroyukiFilter[i]);
-        //console.log(hiroyukiFilter[i].director);  
-      }
+  }
+  if (directorOption === "Gorō") {
+    container.innerHTML = " ";
+    const goroFilter = films.filter((x) => x.director === "Gorō Miyazaki");
+    for (let i = 0; i < goroFilter.length; i++) {
+      container.innerHTML += img(goroFilter[i]);
+      //console.log(goroFilter[i].director);
     }
-    if (directorOption === "Hiromasa") {
-      container.innerHTML = " ";
-      const hiromasaFilter = films.filter(x => (x.director === "Hiromasa Yonebayashi"));
-      for (let i = 0; i < hiromasaFilter.length; i++) {
-        container.innerHTML += img(hiromasaFilter[i]);
-        //console.log(hiromasaFilter[i].director);  
-      }
+  }
+  if (directorOption === "Hiroyuki") {
+    container.innerHTML = " ";
+    const hiroyukiFilter = films.filter(
+      (x) => x.director === "Hiroyuki Morita"
+    );
+    for (let i = 0; i < hiroyukiFilter.length; i++) {
+      container.innerHTML += img(hiroyukiFilter[i]);
+      //console.log(hiroyukiFilter[i].director);
     }
-    if (directorOption === "Yoshifumi") {
-      container.innerHTML = " ";
-      const yoshifumiFilter = films.filter(x => (x.director === "Yoshifumi Kondō"));
-      for (let i = 0; i < yoshifumiFilter.length; i++) {
-        container.innerHTML += img(yoshifumiFilter[i]);
-        //console.log(yoshifumiFilter[i].director); 
-      }
+  }
+  if (directorOption === "Hiromasa") {
+    container.innerHTML = " ";
+    const hiromasaFilter = films.filter(
+      (x) => x.director === "Hiromasa Yonebayashi"
+    );
+    for (let i = 0; i < hiromasaFilter.length; i++) {
+      container.innerHTML += img(hiromasaFilter[i]);
+      //console.log(hiromasaFilter[i].director);
     }
-  });
+  }
+  if (directorOption === "Yoshifumi") {
+    container.innerHTML = " ";
+    const yoshifumiFilter = films.filter(
+      (x) => x.director === "Yoshifumi Kondō"
+    );
+    for (let i = 0; i < yoshifumiFilter.length; i++) {
+      container.innerHTML += img(yoshifumiFilter[i]);
+      //console.log(yoshifumiFilter[i].director);
+    }
+  }
+});
 //PAGINAS DE DATOS
 
 const imgData = (films) => {
@@ -144,18 +147,20 @@ const imgData = (films) => {
     </div>
     <h2><strong> PERSONAJES: </strong></h2> 
     <div>
-    ${films.gente.map((x)=>  `<img src= "${x.img}" class= "orderPerson"/>`)};
+    ${films.gente.map((x) => `<img src= "${x.img}" class= "orderPerson"/>`)};
     </div>
     </div>
 
     <h2><strong> UBICACIONES: </strong></h2>
     <div id="orderLocation"> 
-    ${films.ubicaciones.map((x)=> `<img src= "${x.img}" class= "orderLocation"/>`)};
+    ${films.ubicaciones.map(
+      (x) => `<img src= "${x.img}" class= "orderLocation"/>`
+    )};
     </div>
     <h2><strong> VEHÍCULOS: </strong></h2>
     <div id="orderCars"> 
-    ${films.vehiculos.map((x)=> {
-      return `<img src= "${x.poster}" class= "orderCars"/>`
+    ${films.vehiculos.map((x) => {
+      return `<img src= "${x.poster}" class= "orderCars"/>`;
     })};
     </div>
     `;
@@ -165,40 +170,38 @@ const images = document.getElementsByClassName("orderPoster");
 
 for (let i = 0; i < images.length; i++) {
   const element = images[i];
- // console.log(element);
-  element.addEventListener("click", (e) =>{
+  // console.log(element);
+  element.addEventListener("click", (e) => {
     container.innerHTML = " ";
     const currentId = e.target.getAttribute("id");
-   //console.log(e.target.getAttribute("id"));
-    printFilmData (currentId);
-  })
+    printFilmData(currentId);
+  });
 }
 
 const printFilmData = (id) => {
   const newHtml = imgData(films[id]);
-  container.innerHTML += newHtml
+  container.innerHTML += newHtml;
   //console.log(newHtml);
-}
+};
 
 //FILTRO TOP 10
 
-const pageTop= document.getElementById("clickTop");
+const pageTop = document.getElementById("clickTop");
 pageTop.addEventListener("click", () => {
-  container.innerHTML = " "; 
+  container.innerHTML = " ";
   for (let i = 0; i < 10; i++) {
-    filterTopTen( films)
+    filterTopTen(films);
     container.innerHTML += img(films[i]);
-    console.log(films[i].rt_score);
+    //console.log(films[i].rt_score);
   }
-  
 });
 
 //PAGINA HISTORIA
-const pageHistory= document.getElementById("clickHistory");
+const pageHistory = document.getElementById("clickHistory");
 
 pageHistory.addEventListener("click", () => {
-  container.innerHTML="";
-  container.innerHTML += imgHistoria;
+  container.innerHTML = "";
+  container.innerHTML += imgHistoria();
 });
 
 const imgHistoria = () => {
@@ -225,5 +228,5 @@ const imgHistoria = () => {
   <p>Si quieres saber más sobre la historia de Studio Ghibli, puedes visitar el Museo Ghibli, ubicado en Mitaka, Tokio. Y si te sientes inspirado para ver uno de los clásicos del estudio, ahora puedes ver El viaje de Chihiro, El castillo vagabundo, Mi vecino Totoro y muchas más películas de Ghibli en Netflix.
   </p>
 </div>
-</article>`
+</article>`;
 };
