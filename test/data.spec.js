@@ -1,9 +1,18 @@
-import { searchFilter} from '../src/data.js';
+import { searchFilter, filterTopTen} from '../src/data.js';
 const prueba = [
   {"title" : "Castillo en el cielo"} , 
   {"title" : "Mi vecino Totoro"} ,
 ]
 const resultado = [{"title" : "Mi vecino Totoro"}]
+const point = [
+  {"rt_score" : "93"},
+  {"rt_score" : "97" },
+  
+]
+const resultadoPoint = [
+  {"rt_score" : "97"},
+  {"rt_score" : "93" }, 
+]
 describe('searchFilter', () => {
   it('is a function', () => {
     expect(typeof searchFilter).toBe('function');
@@ -14,12 +23,12 @@ describe('searchFilter', () => {
   });
 });
 
-/*describe('anotherExample', () => {
+describe('filterTopTen', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof filterTopTen).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('deberia retornar rt_score en orden', () => {
+    expect(filterTopTen('rt_score', point)).toStrictEqual(resultadoPoint);
   });
-});*/
+});
