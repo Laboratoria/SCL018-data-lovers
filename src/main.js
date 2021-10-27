@@ -47,6 +47,7 @@ order.addEventListener("change", (event) => {
   if (option === "Alfabetico") {
     container.innerHTML = " ";
     for (let i = 0; i < films.length; i++) {
+      filterOne (films, img, option);
       container.innerHTML += img(films[i]);
       //console.log(films[i].title);
     }
@@ -54,12 +55,13 @@ order.addEventListener("change", (event) => {
   //FILTRO DE AÑO
   if (option === "Año") {
     container.innerHTML = " ";
-    for (let i = 0; i < films.length; i++) { 
+    for (let i = 0; i < films.length; i++) {
+      filterOne (films, img, option); 
       container.innerHTML += img(films[i]);
       //console.log(films[i].release_date);
     }
   }
-  filterOne (films, img, option);
+  //filterOne (films, img, option);
 });
 
 //FILTRO POR DIRECTOR
@@ -185,10 +187,11 @@ const pageTop= document.getElementById("clickTop");
 pageTop.addEventListener("click", () => {
   container.innerHTML = " "; 
   for (let i = 0; i < 10; i++) {
+    filterTopTen( films)
     container.innerHTML += img(films[i]);
-    //console.log(films[i].rt_score);
+    console.log(films[i].rt_score);
   }
-  filterTopTen( films)
+  
 });
 
 //PAGINA HISTORIA
