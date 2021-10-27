@@ -9,15 +9,15 @@ export const searchFilter = (search, films) => {
 
 export const filterOne = (films) => {
    
-  //filtro az
- const sortAz = films.sort((t1, t2) => {
-    return(t1.title < t2.title) ? -1 : 1
-  })
+//filtro az
+const sortAz = [...films].sort((t1, t2) => {
+  return(t1.title < t2.title) ? -1 : 1
+})
   //FILTRO DE AÑO
-   const sortYear= films.sort((a, b) => {
+   const sortYear= [...films].sort((a, b) => {
       return a.release_date - b.release_date
     })
-    return sortAz , sortYear;
+    return {sortAz , sortYear};
   };
 
 
