@@ -210,7 +210,7 @@ pageHistory.addEventListener("click", () => {
 const imgHistoria = () => {
   return `
   <article>
-  <img src="imagenes/hayao.jpg" class="srHayao"/> 
+  <img src="Imagenes/hayao.jpg" class="srHayao"/> 
   <div class="paragraph">
     <h1>Un poco de historia</h1>
   <p>Studio Ghibli fue fundado por el animador, director, productor, guionista, autor y artista de manga Hayao Miyazaki; el director de cine japonés Isao Takahata; y el productor Toshio Suzuki. En los últimos 37 años, han creado 20 largometrajes (y contando), además de varios cortometrajes y comerciales de televisión.
