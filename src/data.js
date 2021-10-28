@@ -15,10 +15,10 @@ export const sortData = (data, sortBy, sortOrder) => {
         return sortedCharacters.reverse();
     }
     return sortedCharacters;
-    }
+    } 
 
 
-//filtrar especie
+//Filtrar ESPECIE
 export const filterDataSpecies = (results, species) => {
     //const filteRickAndMorty = data.results;
 
@@ -27,19 +27,10 @@ export const filterDataSpecies = (results, species) => {
   }
 
 
-//filtrar estatus
+//Filtrar ESTATUS
 export const filterDataStatus = (results, status) => {
     //const filteRickAndMorty = data.results;
 
     const filterStatus = results.filter(estado => estado.status === status);
     return filterStatus;
   }
-
-
-
-//LIMPIAR
-/* const limpiar = () => {
-    for (let i = $select.option.length; i >= 0; i--) {
-      $select.remove(i);
-    }
-  }; */

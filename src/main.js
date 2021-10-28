@@ -1,12 +1,15 @@
 import data from './data/rickandmorty/rickandmorty.js';
 import {sortData, filterDataSpecies, filterDataStatus} from './data.js';
 
+
 // Averiguar porqué no es una función pura
 const sortBy = "name";
+
 
 // Función para aparecer y desaparecer páginas
 const firstPage = document.getElementById("firstPage");
 const secondPage = document.getElementById("secondPage");
+
 
 // Botón INGRESAR
 document.getElementById("buttonEnter").addEventListener("click", () => {
@@ -14,15 +17,15 @@ document.getElementById("buttonEnter").addEventListener("click", () => {
     secondPage.style.display = "block";
 });
 
+
 // Botón VOLVER
 document.getElementById("buttonBack").addEventListener("click", () => {
     secondPage.style.display = "none";
     firstPage.style.display = "block";
 });
 
-// Llamar personajes
-// <li>Episodio: ${rickandmorty.episode}</li>
 
+// Llamar PERSONAJES
 const rickandmorty = data.results;
 const printCharacters = document.getElementById("root");
 
@@ -48,16 +51,13 @@ return `
 </section>`;
 };
 
-/* for (let i=0; i < rickandmorty.length; i++) { */
-    for (let i=0; i < 20; i++) {
+    for (let i=0; i < rickandmorty.length; i++) {
 printCharacters.innerHTML += drawCard(rickandmorty[i]);
 }
 
 
 // SortBy
-
 const orderOption = document.querySelector(".orderedBox");
-
 orderOption.addEventListener("change", (event) => {
     const chosenOrder = sortData(data, sortBy, event.target.value); // selecciona dónde va a ser el evento. Y el evento es en el value
     const print = () => {
@@ -101,43 +101,22 @@ filterStatus.addEventListener("change", (event) => {
 });
 
 
-
-/* PROBANDO */
-
-//Botón LIMPIAR ESPECIES
-document.getElementById("bottonClean").addEventListener("click", () => {
-document.getElementById("filterSpecies").value = "Filter-Sp";
-});
-
-//Botón LIMPIAR ESTATUS
-document.getElementById("bottonClean").addEventListener("click", () => {
-document.getElementById("filterStatus").value = "Filter-St";
-});
-
-
-
-/* bottonCleanReset.addEventListener("click", () => {
+//Botón LIMPIAR SORTBY/ESPECIES/ESTADOS
+const buttonCleanReset = document.getElementById("bottonClean");
+buttonCleanReset.addEventListener('click', () => {
+    let cleanCard = () => {
         printCharacters.innerHTML = "";
-        const bottonToClean = () => {
-            for (let i=0; i < data.results.length; i++) {
-                printCharacters.innerHTML += drawCard(data.results[i]);
-            }
-        }
-        bottonToClean(data.results);
-    });  */
-
-
-//boton limpiar funcional(no limpia los selct)
-/* const buttonCleanReset = document.getElementById("buttonClean");
-buttonCleanReset.addEventListener("click", () => {
-    printCharacters.innerHTML = "";
-    function clean() {
-        for (let i = 0; i < data.results.length; i++) {
-            printCharacters.innerHTML += drawCard(data.results[i]);
+        for (let i = 0; i < rickandmorty.length; i++) {
+            printCharacters.innerHTML += drawCard(rickandmorty[i]);
         }
     }
-    clean(data.results);
-});
-buttonCleanReset.addEventListener("click", () =>{
     
-}) */
+    let cleanFilters = () => {
+        document.getElementById("filterStatus").selectedIndex = 0;
+        document.getElementById("filterSpecies").selectedIndex = 0; 
+        document.getElementById("sort").selectedIndex = 0;        
+    } 
+
+    cleanCard();
+    cleanFilters(); 
+});

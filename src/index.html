@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wubba Lubba</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/rickymorty.png">
+    <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
@@ -22,7 +24,6 @@
         <main class="firstPageMain">
             <!--ARTICLE CON NUBE Y TEXTO-->
             <article>
-                <!-- <img src="images/Nube.png" alt="Nube con un texto que dice Conoce más sobre los personajes de Rick y Morty" class="cloudImage"> -->
                 <p class="cloudParagraph"> <span class="firstPartCloudParagraph">Conoce más sobre los</span>
                     <span>personajes de Rick y Morty</span> </p>
             </article>
@@ -62,11 +63,7 @@
                 class="btnBackToFirstPage btnsSecondPage">
                 <p class="btnTextBackToFirstPage">VOLVER</p>
             </button>
-            <!--BOTÓN BÚSQUEDA-->
-            <!--       <section class="searcher">
-            <input class="searcherInput" type="search" name="buscador" placeholder="Buscador"> -->
-            <!--     <input class="searcherImage" type="image" name="submit" src="images/Lupa.png" alt="buscar"/> -->
-            <!--     </section> -->
+
             <!--BOTÓN SORTBY-->
             <section class="sortBy">
                 <select id="sort" class="orderedBox btnsSecondPage">
@@ -78,7 +75,7 @@
         </nav>
 
         <!--MAIN CON IMAGEN, CARD, ASIDE-->
-        <main class="secondImageSecondPage cardsAndFilters">
+        <main class="secondImageSecondPage">
             <!--CARDS-->
             <div id="root"></div>
             <!--ASIDE CON FILTROS-->
@@ -115,19 +112,8 @@
                         </select>
                     </section>
 
-                    <!--BOTÓN LIMPIAR
-            <button id="bottonClean">LIMPIAR</button>-->
-            <button id= "bottonClean">LIMPIAR</button>
-
-            <!-- <script>
-            function myFunction() {
-              document.getElementById("filterStatus").value = "Filter-St";
-            }
-
-            </script>
-            document.getElementById("bottonClean").addEventListener("click", () => {
-                document.getElementById("filterStatus").value = "Filter-St";
-            }) -->
+                    <!--BOTÓN LIMPIAR-->
+                    <button id= "bottonClean" class="filterBtns">LIMPIAR</button>
 
                 </section>
             </aside>
