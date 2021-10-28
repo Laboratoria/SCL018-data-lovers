@@ -2,11 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Imagenes/kiki.jpg" class="pestaña">
+    <title>Ghiblipedia</title> 
+  <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+      <nav>
+      <img src="Imagenes/totoro.jpeg">
+      <audio controls>
+        <source src="audio/Sora-Kara-Futte-Kita-Shoujo.mp3" type="audio/mp3">
+        <source src="audio/Sora-Kara-Futte-Kita-Shoujo.ogg" type="audio/ogg">
+      </audio>
+      <ul>
+        <li id="clickHistory" class="header"><a>Historia</a></li>
+        <li class="header"><a href="index.html">Películas</a></li>
+        <li id= "clickTop" class="header"><a>Top</a></li>
+      </ul>
+    </nav>
+    </header>
+    <div id="lookDisplay">
+    <section>
+      <div class ="category">
+      <select name="director" class="filter" id="director">
+        <option value="todas" autofocus>Todas</option>
+        <option value="Hayao" id ="hayao" >Hayao Miyazaki</option>
+        <option value="Isao">Isao Takahata</option>
+        <option value="Gorō">Gorō Miyazaki</option>
+        <option value="Hiroyuki">Hiroyuki Morita</option>
+        <option value="Hiromasa">Hiromasa Yonebayashi</option>
+        <option value="Yoshifumi">Yoshifumi Kondō</option>
+      </select>
+      <select name="orden" class="filter" id="order">
+        <option value="Todas" autofocus>Todas</option>
+        <option value="Alfabetico" id="az">Alfabético</option>
+        <option value="Año" id="year"> Año</option>
+      </select>
+    </div>
+    <div class="search" autocomplete="on">
+      <input type="search" placeholder="Buscar Películas" class="filter" id="filter">
+    </div>
+    </section>
+  </div>
+    <main>  
+      <div id="allFirst"> </div>
+    
+    </main>
+    <footer>
+      <ul>
+        <div class="redesSociales">
+        <li><img src="Imagenes/youtube.png"></li>
+        <li><img src="Imagenes/instagram.png"></li>
+        <li><img src="Imagenes/facebook.png"></li>
+        </div>
+        <div class="right">
+        <li class="copy"><img src="Imagenes/copyright.png" class="imgCopy">
+          <p> Todos los Derechos Reservados</p></li>
+        </div>
+        </ul>
+    
+    </footer>
+     <!--<div id="root"></div>-->
     <script src="main.js" type="module"></script>
   </body>
 </html>
