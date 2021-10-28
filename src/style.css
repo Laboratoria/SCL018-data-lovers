@@ -163,6 +163,7 @@ footer img {
 .orderInfo {
   display: flex;
   flex-direction: row;
+  margin-top: 30px;
 }
 
 h2,
@@ -250,6 +251,11 @@ article {
   justify-content: space-evenly;
 }
 
+#lookDisplay {
+  display: block;
+}
+
+
 @media screen and (max-width: 950px) {
   a {
     font-size: 20px;
@@ -302,7 +308,7 @@ article {
     flex-direction: column;
   }
   .paragraph {
-    width: 380px;
+    width: 600px;
     height: auto;
     font-size: 16px;
   }

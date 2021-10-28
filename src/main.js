@@ -172,6 +172,7 @@ for (let i = 0; i < images.length; i++) {
   const element = images[i];
   // console.log(element);
   element.addEventListener("click", (e) => {
+    document.getElementById("lookDisplay").style.display="none";
     container.innerHTML = " ";
     const currentId = e.target.getAttribute("id");
     printFilmData(currentId);
@@ -188,6 +189,7 @@ const printFilmData = (id) => {
 
 const pageTop = document.getElementById("clickTop");
 pageTop.addEventListener("click", () => {
+  document.getElementById("lookDisplay").style.display="none";
   container.innerHTML = " ";
   for (let i = 0; i < 10; i++) {
     filterTopTen(films);
@@ -200,6 +202,7 @@ pageTop.addEventListener("click", () => {
 const pageHistory = document.getElementById("clickHistory");
 
 pageHistory.addEventListener("click", () => {
+  document.getElementById("lookDisplay").style.display="none";
   container.innerHTML = "";
   container.innerHTML += imgHistoria();
 });
