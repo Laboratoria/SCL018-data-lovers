@@ -114,6 +114,10 @@ nav{
     display: flex;
 }
 
+.cardsAndFilters{
+    flex-direction: column-reverse; 
+}
+
 /*FLIPCARDS*/
     #root{
     display: flex;
@@ -271,24 +275,23 @@ height: 2.5rem;
 
 
 /*CELULAR*/
-@media (max-width:768px) {
+@media (max-width: 460px){
 
     #firstPage {
-   /*      background-image: url("images/Fondo1.1.jpg"); */
-    background-color: green;
-    }
+        background-image: url("images/Fondo1.1.jpg");
+        }
     
     /* Webkit para navegador google chrome y zafari */
     #titleFirstPage {
-        font-size: 2rem;
-        -webkit-text-stroke: 0.1rem black; 
         padding: 1rem;
     }
+
+        #titleFirstPage h1 {
+        font-size: 2rem;
+    } 
     
     .firstPageMain{
-        flex-direction: column;
-        margin-left: 1.3rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
     
     .firstPartCloudParagraph{
@@ -300,7 +303,7 @@ height: 2.5rem;
     }
     
     .containerButtonsFirstPage {
-        margin-top: 4rem;
+        margin-top: 2rem;
         padding: 1.5rem;
     }
     
@@ -309,8 +312,9 @@ height: 2.5rem;
         margin: 0.5rem; 
     }
 
+    /*NO CAMBIA*/
     .btnTextFirstPage{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     
 /*     .audioRickAndMorty{
@@ -319,7 +323,7 @@ height: 2.5rem;
 
     .firstImageSecondPage {
         background-image: url("images/Header2.2.png");
-        height: 8vh; 
+        height: 3vh; 
     } 
     
     nav{
@@ -328,13 +332,13 @@ height: 2.5rem;
     
     .secondImageSecondPage {
         height: 100vh;
-        flex-direction: column-reverse;
         justify-content: space-evenly;
+        flex-direction: column-reverse; 
     }
-    
+
     /*FLIPCARDS*/
         #root{
-        margin-left: 1.5rem;
+        margin-left: 0.5rem;
     }
     
     .card{
@@ -402,264 +406,114 @@ height: 2.5rem;
 
 
 /*TABLET*/
-@media (max-width: 992px) {
-    *{
-        margin: 0%;
-        padding: 0%;
-    /*     cursor: url("images/Pistola2.png"), auto; */
-    } 
-    
-    /* @ encapsulan un grupo de reglas */
-    @font-face {
-        font-family: Audiowide;
-        src: url(fonts/Audiowide-Regular.ttf);
-        font-family: Architects Daughter;
-        src: url(fonts/ArchitectsDaughter-Regular.ttf);
-    }
-    
+@media (max-width:768px){
+        
     #firstPage {
-        background-image: url("images/Fondo1.jpg");
-        background-size: cover;
-        height: 100vh; 
-        width: 100vw; 
-    }
-    
-    /* Webkit para navegador google chrome y zafari */
+            background-position: center;
+        }
+
     #titleFirstPage {
-        font-family: Audiowide, Arial, Helvetica, sans-serif;
-        font-size: 1.875rem;
-        color: #00ACB3;
-        -webkit-text-stroke: 0.125rem black; 
-        display: flex;
-        justify-content: center;
-    }
+            font-size: 3rem;
+            padding: 2rem;
+        }
     
-    .firstPageMain{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
     
-    span{
-        display: block;
-    }
+        .firstPageMain {
+            flex-direction: column;
+        }
     
-    .firstPartCloudParagraph{
-        margin-left: 3rem;
-    }
+        .containerButtonsFirstPage {
+            flex-direction: column;
+            margin-right: 20rem;
+        }
+       
+        .btnFirstPage{
+            padding: 1rem;
+            margin: 2rem; 
+        }
     
-    .cloudParagraph{
-        font-family: Audiowide, Arial, Helvetica, sans-serif;
-        color: black; 
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    
-    .containerButtonsFirstPage {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 5rem;
-        margin-left: 20rem;
-    }
-    
-    #buttonEnter{
-        cursor: pointer;
-    }
-    
-    .btnFirstPage{
-        background-color: rgba(252, 244, 244, 0.5);
-        padding: 0.8rem;
-        border-radius: 100rem;
-        margin: 1rem; 
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    .btnTextFirstPage{
-        color: #00ACB3; 
-        font-size: 1.8rem;
-        font-weight: bolder;
-        font-family: Architects Daughter, Arial, Helvetica, sans-serif;
-        -webkit-text-stroke: 0.01rem black;
-    }
-    
-    .audioRickAndMorty{
-    margin-top: 4rem;
-    }
-    
-    #secondPage {
-        display: none;
-    }
-    
-    .firstImageSecondPage {
-        background-image: url("images/Header2.png");
-        background-size: cover;
-        height: 50vh; 
-        width: auto;  
-    } 
-    
-    nav{
-        background-image: url("images/Fondo2.png");
-        background-size: Repeat;
-        height: 20vh;
-        display: flex;
-        align-content: center;
-        flex-direction: row; 
-        align-items: center;
-        justify-content: space-around; 
-    }
-    
-    .secondImageSecondPage {
-        background-image: url("images/Fondo2.png");
-        background-size: Repeat;
-        display: flex;
-    }
-    
-    /*FLIPCARDS*/
+        .btnTextFirstPage{
+            font-size: 2rem;
+            padding:1rem;
+        }
+
+/*SEGUNDA PÁGINA*/
+
+        .firstImageSecondPage {
+            background-image: url("images/Header2.3.png");
+            height: 18vh; 
+        } 
+
         #root{
-        display: flex;
-        flex-wrap: wrap;
-        width: 70vw;
-    }
-    
-    .tarjeta{
-        position: relative;
-        transform-style: preserve-3d; 
-        transition: .7s ease;
-    }
-    
-    .frontCard, .backCard{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        backface-visibility: hidden;
-    }
-    
-    .backCard{
-        transform: rotateY(180deg);
-        background-color: rgba(252, 244, 244, 0.5);
-    }
-    
-    .tarjeta-wrap:hover .tarjeta{
-        transform: rotateY(180deg)
-    }
-    
-    .card{
-        height: 50vh;
-        width: 20vw; 
-        background-image: url("images/Portal.jpg");
-        background-size: cover;
-        margin: 1rem;
-    }
-    
-    .cardImage{
-        height: 25vh;
-        width: auto;
-        margin: auto;
-        margin-top: 1rem;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .cardTextName{
-        font-family: Audiowide, Arial, Helvetica, sans-serif;
-        color: #000000;
-        font-size: 1.3rem;
-        text-align: center;
-        margin-top: 3rem;
-        font-weight: bold;
-    } 
-    
-    .cardText{
-        font-family: Audiowide, Arial, Helvetica, sans-serif;
-        color: #000000;
-        font-size: 0.8rem;
-        text-align: center;
-        margin-top: 1.5rem;
-    } 
-    /* HASTA AQUÍ FLIP CARDS*/
-    
-    
-    .filters{
-        background-image: url("images/Portal.jpg");
-        color: black;
-        text-align: center;
-        font-family: Architects Daughter, Arial, Helvetica, sans-serif;
-    }
-    
-    aside{
-    margin-right: 4rem;
-    margin-top: 1rem;
-    }
-    
-    .filtersAside{
-        /*le puse imagen al borde*/
-        border: 0.8rem solid;
-        border-image: url("images/Portal.jpg") 30 30 repeat;
-        display: flex;
-        flex-direction: column;
-        position: sticky;
-        top: 0rem;
-        margin-left: 2rem;
-    }
-    
-    /*Botones FILTRO*/
-    .filterBtns{
-        margin: 2rem;
-        justify-content: center;
-    }
-    
-    /* Color BOTONES */
-    select, #bottonClean {
-        color:#00ACB3;
-        -webkit-text-stroke: 0.0005rem black;
-        padding:0.5rem;
-        font-family: Architects Daughter, Arial, Helvetica, sans-serif;
-        font-size:1rem;
-        font-weight:bold;
-        text-align:center;
-        -webkit-appearance: none; 
-        border-radius: 1rem;
-    }
-    
-    #sort {
-        background-color:#C0BFBF;
-    }
-    
-    #filterSpecies {
-        background-color: #C0BFBF;
-    }
-    
-    #filterStatus {
-        background-color: #C0BFBF;
-        /*Averiguar porq este botón se dimensiona diferente*/
-        width: 12rem;
-    }
-    
-    #bottonClean{
-        background-color: #C0BFBF;
-    }
-    
-    select:focus, select:active {
-        border:0;
-        outline:0;
-    }
-    
-    #buttonBack{
-    color:#00ACB3;
-    -webkit-text-stroke: 0.0005rem black;
-    padding:0.5rem;
-    font-family: Architects Daughter, Arial, Helvetica, sans-serif;
-    font-size:1rem;
-    font-weight:bold;
-    text-align:center;
-    -webkit-appearance: none; 
-    border-radius: 1rem;
-    background-color: #C0BFBF;
-    height: 2.5rem;
-    }
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            margin-left: 2.9rem;
+        }
+       
+        nav{
+            height: 13vh;
+        }
+
+        .secondImageSecondPage {
+            flex-direction: column-reverse; 
+/*             height: 75vh; 
+            padding: 3rem;*/
+        }
+
+        .card{
+            height: 30vh;
+            width: 40vw;
+        }
+
+        .cardImage{
+            height: 20vh;
+        }
+
+        .cardTextName{
+            margin-top: 1rem;
+        } 
+
+        .cardText{
+            font-size: 1rem;
+            margin-top: 1rem;
+        } 
+
+        aside{
+            justify-content: center;
+            font-size: 2rem;
+        }  
+
+        .filtersAside{
+            margin-left: 4rem;
+        }
+
+        .filterBtns{
+           margin: 0.9rem;
+        }
+        
+/*         select {
+            padding:1rem;
+            font-size:2rem;
+            border-radius: 2rem;
+          }  */
+        
+        .btnBackToFirstPage{
+            padding:0.9rem;
+            font-size:1.5rem; 
+            border-radius: 2.5rem;
+            height: 5rem;}
+
+        #filterSpecies {
+            width: 36.6rem;
+            }
+            
+            #filterStatus {
+            width: 36.6rem;
+            }
+
+
+
 }
+
 
