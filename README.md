@@ -18,31 +18,27 @@ Esta es una App creada no solo para fanáticos, sino que también para gente que
 En la segunda página le usuarie puede ordenar a los personajes alfabéticamente de la A a la Z y de la Z a la A. También puede filtrar a los personajes por especie y estado. Y finalmente, puede limpiar las casillas de filtros con un botón “limpiar” y puede regresar a la página principal con un botón “volver”.
 ## 3.	Historias de usuarie
 
-<img src="images/HU.jpg">
-
 ![](src/imagesReadme/HU.jpg)
-
-
 
 ## 4.	Diseño de la interfaz del usuarie
 
 ### a.	Prototipo de baja fidelidad
 
-<img src="imagesReadme/PBF1.jpeg">
+![](src/imagesReadme/PBF1.jpeg)
 
-<img src="imagesReadme/PBF2.jpeg">
+![](src/imagesReadme/PBF2.jpeg)
 
-<img src="imagesReadme/PBF3.jpeg">
+![](src/imagesReadme/PBF3.jpeg)
 
 ### b.	Prototipo de alta fidelidad
 
 Tamaño Desktop
 
-<img src="imagesReadme/PAF1.jpeg">
+![](src/imagesReadme/PAF1.jpeg)
 
 Tamaño Celular
 
-<img src="imagesReadme/PAF2.jpeg">
+![](src/imagesReadme/PAF2.jpeg)
 
 ## 5.	Test de usabilidad
 Cuando hicimos los test de usabilidad, el principal problema que detectamos fueron las imágenes de fondo que utilizábamos en el fondo de la segunda página y en el fondo de las cartas, ya que los colores eran demasiado sobrecargados y no permitían apreciar bien otros elementos como las letras, por ejemplo. Para solucionar estos problemas, cambiamos la imagen de fondo de la segunda página por una más neutral y le pusimos una transparencia a la carta para que, a la hora de voltearse, se vieran mejor las letras.
