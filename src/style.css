@@ -3,7 +3,6 @@
     *{
         margin: 0%;
         padding: 0%;
-    /*     cursor: url("images/Pistola2.png"), auto; */
     } 
     
     /* @ encapsulan un grupo de reglas */
@@ -198,7 +197,6 @@
     }
     
     .filtersAside{
-        /*le puse imagen al borde*/
         border: 0.8rem solid;
         border-image: url("images/Portal.jpg") 30 30 repeat;
         display: flex;
@@ -270,7 +268,6 @@
     *{
         margin: 0%;
         padding: 0%;
-    /*     cursor: url("images/Pistola2.png"), auto; */
     } 
     
     /* @ encapsulan un grupo de reglas */
@@ -465,7 +462,6 @@
     }
     
     .filtersAside{
-        /*le puse imagen al borde*/
         border: 0.8rem solid;
         border-image: url("images/Portal.jpg") 30 30 repeat;
         display: flex;
@@ -538,7 +534,6 @@
         *{
             margin: 0%;
             padding: 0%;
-        /*     cursor: url("images/Pistola2.png"), auto; */
         } 
         
         /* @ encapsulan un grupo de reglas */
@@ -733,7 +728,6 @@
         }
         
         .filtersAside{
-            /*le puse imagen al borde*/
             border: 0.8rem solid;
             border-image: url("images/Portal.jpg") 30 30 repeat;
             display: flex;
