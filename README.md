@@ -20,7 +20,8 @@ En la segunda página le usuarie puede ordenar a los personajes alfabéticamente
 
 <img src="images/HU.jpg">
 
-![Historia de usuarie](/relative/path/to/HU.jpg?raw=true "Historia de usuarie")
+![](src/imagesReadme/HU.jpg)
+
 
 
 ## 4.	Diseño de la interfaz del usuarie
