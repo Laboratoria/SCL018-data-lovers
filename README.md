@@ -18,7 +18,10 @@ Esta es una App creada no solo para fanáticos, sino que también para gente que
 En la segunda página le usuarie puede ordenar a los personajes alfabéticamente de la A a la Z y de la Z a la A. También puede filtrar a los personajes por especie y estado. Y finalmente, puede limpiar las casillas de filtros con un botón “limpiar” y puede regresar a la página principal con un botón “volver”.
 ## 3.	Historias de usuarie
 
-<img src="imagesReadme/HU.jpg">
+<img src="images/HU.jpg">
+
+![Historia de usuarie](/relative/path/to/HU.jpg?raw=true "Historia de usuarie")
+
 
 ## 4.	Diseño de la interfaz del usuarie
 
